@@ -975,3 +975,34 @@ $(window).on("scroll", function () {
 $( window ).on( "resize", function() {
     DaiLyAction.fixedLeftMenu();
 });
+
+$(document).ready(function () {
+    if ($(".popup-scan-new").height() > 0) {
+        $(".popup-scan-new #btn-check-code").click(function () {
+            $(".popup-scan-new .section-chung-nhan").addClass('d-none');
+            $(".popup-scan-new .scan-qr-success").removeClass('d-none');
+        });
+        $(".popup-scan-new #back-scan-qr").click(function () {
+            $(".popup-scan-new .section-chung-nhan").removeClass('d-none');
+            $(".popup-scan-new .scan-qr-success").addClass('d-none');
+            $(".popup-scan-new .status-bao-hanh .da-kich-hoat").addClass('d-none');
+            $(".popup-scan-new .status-bao-hanh .chua-kich-hoat").removeClass('d-none');
+            $(".popup-scan-new .btn-xem-chung-nhan").addClass('d-none');
+            $(".popup-scan-new #btn-kich-hoat").removeClass('d-none');
+        });
+        $(".popup-scan-new #btn-kich-hoat").click(function () {
+            $(".popup-scan-new .status-bao-hanh .chua-kich-hoat").addClass('d-none');
+            $(".popup-scan-new .status-bao-hanh .da-kich-hoat").removeClass('d-none');
+            $(this).addClass('d-none');
+            $(".popup-scan-new .btn-xem-chung-nhan").removeClass('d-none');
+        });
+        $('#popup_scan_qr').on('hidden.bs.modal', function () {
+            $(".popup-scan-new .section-chung-nhan").removeClass('d-none');
+            $(".popup-scan-new .scan-qr-success").addClass('d-none');
+            $(".popup-scan-new .status-bao-hanh .da-kich-hoat").addClass('d-none');
+            $(".popup-scan-new .status-bao-hanh .chua-kich-hoat").removeClass('d-none');
+            $(".popup-scan-new .btn-xem-chung-nhan").addClass('d-none');
+            $(".popup-scan-new #btn-kich-hoat").removeClass('d-none');
+        });
+    }
+});

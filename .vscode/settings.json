@@ -1,0 +1,9 @@
+{
+    "less.compile": {
+        "compress": true,
+        "out": "../css/"
+    },
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+}
