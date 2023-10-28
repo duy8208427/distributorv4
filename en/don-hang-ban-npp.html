@@ -882,7 +882,7 @@
                 <!-- End main content left -->
                 <!-- Start main content right -->
                 <div class="list-right">
-                  <div class="d-flex align-items-center pt-1 sub-title">
+                  <div class="d-flex align-items-center pt-1 pb-3 sub-title">
                       <h5 class="primary-color">Customer Information</h5>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4067_64602)">
@@ -897,116 +897,8 @@
                       </svg>
                   </div>
                   <!-- Lấy thông tin khách cũ -->
-                  <p class="mt-4 mb-2">Is the customer a returning customer? Search customer information <span class="primary-color" style="font-weight:bold!important;cursor: pointer;" data-toggle="modal" data-target="#popup_find_customer">here</span></p>
-                  <!-- Nhập thông tin khách mới -->
-                  <div class="mt-3 d-flex align-items-center pt-2 sub-title">
-                  <h5>OR Enter new customer information</h5>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_4067_64602)">
-                        <circle cx="9.9987" cy="10.0002" r="8.16667" stroke="#CED0D8" stroke-width="2"/>
-                        <path d="M10 15L10 8.33333M10 5L10 6.66667" stroke="#CED0D8" stroke-width="2"/>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_4067_64602">
-                        <rect width="20" height="20" fill="white"/>
-                        </clipPath>
-                    </defs>
-                    </svg>
-                  </div>
-                  <p class="mt-2 mb-2">Please fill in all information so that the warranty activation process can be received most conveniently and quickly. Note: Items marked * are mandatory information fields</p>
-                  <div class="mt-4 transfer-form">
-                    <div class="row">
-                        <div class="col-12 col-md-8">
-                            <div class="form-group">
-                                <label for="" class="c-text-base manrope-bold">
-                                Full Name *
-                                </label>
-                                <input name="full_name" type="text" class="transfer-form__input" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <div class="form-group">
-                                <label for="" class="c-text-base manrope-bold">
-                                Contact*
-                                </label>
-                                <input name="phone_number" type="text" class="transfer-form__input" placeholder="Phone Number">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-md-8">
-                            <div class="form-group">
-                                <label for="" class="c-text-base manrope-bold">
-                                Email address
-                                </label>
-                                <input name="email_order" type="email" class="transfer-form__input" placeholder="Email addresss">
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4">
-                              <div class="form-group">
-                                <label for="" class="c-text-base manrope-bold">
-                                Zalo Contact
-                                </label>
-                                <input name="zalo" type="text" class="transfer-form__input" placeholder="Phone number register Zalo">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="c-text-base manrope-bold">
-                            Address *
-                        </label>
-                        <input name="address_detail" type="text" class="transfer-form__input" placeholder="Detailed address">
-                    </div>
-                    <div class="row" id="group-city-option">
-                        <div class="col-12 col-md-4">
-                            <div class="form-group">
-                            <label for="" class="c-text-base manrope-bold">
-                                Province / City *
-                            </label>
-                            <div class="shop__dropdown">
-                                <select class="ui dropdown" id="option_city"></select>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="form-group">
-                            <label for="" class="c-text-base manrope-bold">
-                                District *
-                            </label>
-                            <div class="shop__dropdown">
-                                <select class="ui dropdown" id="option_district"></select>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="form-group">
-                            <label for="" class="c-text-base manrope-bold">
-                                Ward *
-                            </label>
-                            <div class="shop__dropdown">
-                                <select class="ui dropdown" id="option_ward"></select>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <!-- Product Select -->
-                  <div class="d-flex align-items-center pb-3 sub-title">
-                      <h5 class="primary-color">Product Select</h5>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_4067_64602)">
-                          <circle cx="9.9987" cy="10.0002" r="8.16667" stroke="#CED0D8" stroke-width="2"/>
-                          <path d="M10 15L10 8.33333M10 5L10 6.66667" stroke="#CED0D8" stroke-width="2"/>
-                      </g>
-                      <defs>
-                          <clipPath id="clip0_4067_64602">
-                          <rect width="20" height="20" fill="white"/>
-                          </clipPath>
-                      </defs>
-                      </svg>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between search-header">
-                    <div class="shop__search-wrapper">
+                  <div class="d-flex align-items-center justify-content-between search-header mobile-colunm">
+                    <div class="shop__search-wrapper" style="margin-right: 40px">
                       <label for="product_search" class="shop__search-icon">
                           <span class="svg-icon">
                               <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1014,52 +906,43 @@
                               </svg>
                           </span>
                       </label>
-                      <input class="shop__search-input manrope-bold " type="text" name="q" placeholder="Enter product name" />
+                      <input class="shop__search-input manrope-bold " type="text" name="q" placeholder="Enter name or customer code" />
                     </div>
                     <div class="filter-area">
-                      <svg id="filter-product" data-toggle="modal" data-target="#popup_filter_cart" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 12L16 12M4 17L6 17M20 17L8 17M9 15L9 17L9 19M19 10L19 14M11 5L11 7M11 9L11 7M4 7L8 7M20 7L11 7M10 7L11 7" stroke="#C9161D" stroke-width="2"/>
-                      </svg>
+                      <a href="#" class="primary-btn" style="display:block;padding:15px 44px;">
+                          <span class="text-uppercase">SEARCH</span>
+                      </a>
                     </div>
                   </div>
-                  <div class="mt-4 table-content">
-                    <table class="table table-custom table-responsive-md">
+                  <div class="mt-4 table-content w-100">
+                    <table class="table table-custom table-responsive-md table-info-customer">
                       <thead>
                         <tr>
-                          <th scope="col">Product</th>
-                          <th scope="col" class="text-center">Category</th>
-                          <th scope="col" class="text-center">Unit price</th>
-                          <th scope="col" class="text-center">Quantity</th>
+                          <th scope="col">Customer code</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Type</th>
+                          <th scope="col">Purchased</th>
+                          <th scope="col">Contact</th>
+                          <th scope="col">Address</th>
                           <th scope="col">Tasks</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
+                          <td>#123456789</td>
+                          <td>Lê Nguyên</td>
                           <td>
-                            <div class="media align-items-center">
-                              <img class="align-self-center mr-3" src="./../assets/images/avatar/avatar-6.png" alt="Generic placeholder image">
-                              <div class="media-body">
-                                <h5 class="mt-0">Lốp Venturer AV568</h5>
-                              </div>
-                            </div>
+                            <p class="status-order processing">Online</p>
                           </td>
-                          <td>
-                            <p class="text-center danh-muc">Venturer</p>
-                          </td>
-                          <td class="text-center">159.000 đ</td>
-                          <td>
-                            <div class="cart-product__item-quantity justify-content-center">
-                              <button class="button-quantity">-</button>
-                              <input type="number" class="input" value="1" min="0" />
-                              <button class="button-quantity">+</button>
-                            </div>
-                          </td>
+                          <td>88.530.000 đ</td>
+                          <td>0905023563</td>
+                          <td>Quận 2, TP. HCM</td>
                           <td>
                             <div class="d-flex align-items-center justify-content-center">
-                              <div class="icon-action icon-cart ml-2">
-                                  <a href="#">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M22.929 6.628L20.929 1.628C20.8546 1.44247 20.7264 1.28347 20.5608 1.17153C20.3952 1.05959 20.1999 0.999847 20 1H4C3.80012 0.999847 3.60479 1.05959 3.43919 1.17153C3.2736 1.28347 3.14535 1.44247 3.071 1.628L1.071 6.628C1.02414 6.74643 1.00005 6.87264 1 7V22C1 22.2652 1.10536 22.5196 1.29289 22.7071C1.48043 22.8946 1.73478 23 2 23H22C22.2652 23 22.5196 22.8946 22.7071 22.7071C22.8946 22.5196 23 22.2652 23 22V7C23 6.87264 22.9759 6.74643 22.929 6.628ZM4.677 3H19.323L20.523 6H3.477L4.677 3ZM3 21V8H21V21H3ZM15.707 13.293C15.8025 13.3852 15.8787 13.4956 15.9311 13.6176C15.9835 13.7396 16.0111 13.8708 16.0123 14.0036C16.0134 14.1364 15.9881 14.2681 15.9378 14.391C15.8875 14.5139 15.8133 14.6255 15.7194 14.7194C15.6255 14.8133 15.5139 14.8875 15.391 14.9378C15.2681 14.9881 15.1364 15.0134 15.0036 15.0123C14.8708 15.0111 14.7396 14.9835 14.6176 14.9311C14.4956 14.8787 14.3852 14.8025 14.293 14.707L13 13.414V18C13 18.2652 12.8946 18.5196 12.7071 18.7071C12.5196 18.8946 12.2652 19 12 19C11.7348 19 11.4804 18.8946 11.2929 18.7071C11.1054 18.5196 11 18.2652 11 18V13.414L9.707 14.707C9.5184 14.8892 9.2658 14.99 9.0036 14.9877C8.7414 14.9854 8.49059 14.8802 8.30518 14.6948C8.11977 14.5094 8.0146 14.2586 8.01233 13.9964C8.01005 13.7342 8.11084 13.4816 8.293 13.293L11.293 10.293C11.4805 10.1055 11.7348 10.0002 12 10.0002C12.2652 10.0002 12.5195 10.1055 12.707 10.293L15.707 13.293Z" fill="black"/>
+                              <div class="icon-action icon-see">
+                                  <a href="./thong-tin-chi-tiet-khach-hang.html">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0.0622299 8.346C1.77323 13 5.67523 16 10.0002 16C14.3252 16 18.2272 13 19.9382 8.346C20.0212 8.1228 20.0212 7.87721 19.9382 7.654C18.2272 3 14.3252 0 10.0002 0C5.67523 0 1.77323 3 0.0622299 7.654C-0.0207433 7.87721 -0.0207433 8.1228 0.0622299 8.346ZM10.0002 2C13.3732 2 16.4512 4.343 17.9292 8C16.4512 11.657 13.3732 14 10.0002 14C6.62723 14 3.54923 11.657 2.07123 8C3.54923 4.343 6.62723 2 10.0002 2ZM10.0002 12C10.7914 12 11.5647 11.7654 12.2225 11.3259C12.8803 10.8864 13.393 10.2616 13.6957 9.53073C13.9985 8.79983 14.0777 7.99556 13.9234 7.21964C13.769 6.44371 13.3881 5.73098 12.8287 5.17157C12.2692 4.61216 11.5565 4.2312 10.7806 4.07686C10.0047 3.92252 9.2004 4.00173 8.4695 4.30448C7.73859 4.60723 7.11388 5.11992 6.67435 5.77772C6.23483 6.43552 6.00023 7.20887 6.00023 8C6.00023 9.06087 6.42166 10.0783 7.1718 10.8284C7.92195 11.5786 8.93936 12 10.0002 12ZM10.0002 6C10.3958 6 10.7825 6.1173 11.1114 6.33706C11.4403 6.55682 11.6966 6.86918 11.848 7.23463C11.9994 7.60009 12.039 8.00222 11.9618 8.39018C11.8846 8.77814 11.6941 9.13451 11.4144 9.41421C11.1347 9.69392 10.7784 9.8844 10.3904 9.96157C10.0024 10.0387 9.60032 9.99913 9.23486 9.84776C8.86941 9.69638 8.55705 9.44004 8.33729 9.11114C8.11753 8.78224 8.00023 8.39556 8.00023 8C8.00023 7.46957 8.21094 6.96086 8.58602 6.58579C8.96109 6.21071 9.4698 6 10.0002 6Z" fill="black"/>
                                     </svg>
                                   </a>
                               </div>
@@ -1067,31 +950,20 @@
                           </td>
                         </tr>
                         <tr>
+                          <td>#123456789</td>
+                          <td>Nguyễn Duy</td>
                           <td>
-                            <div class="media align-items-center">
-                              <img class="align-self-center mr-3" src="./../assets/images/avatar/avatar-6.png" alt="Generic placeholder image">
-                              <div class="media-body">
-                                <h5 class="mt-0">Lốp Venturer AV568</h5>
-                              </div>
-                            </div>
+                            <p class="status-order processing">Online</p>
                           </td>
-                          <td>
-                            <p class="text-center danh-muc">Venturer</p>
-                          </td>
-                          <td class="text-center">159.000 đ</td>
-                          <td>
-                            <div class="cart-product__item-quantity justify-content-center">
-                              <button class="button-quantity">-</button>
-                              <input type="number" class="input" value="1" min="0" />
-                              <button class="button-quantity">+</button>
-                            </div>
-                          </td>
+                          <td>66.750.000 đ</td>
+                          <td>0905023563</td>
+                          <td>Quận 2, TP. HCM</td>
                           <td>
                             <div class="d-flex align-items-center justify-content-center">
-                              <div class="icon-action icon-cart ml-2">
-                                  <a href="#">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M22.929 6.628L20.929 1.628C20.8546 1.44247 20.7264 1.28347 20.5608 1.17153C20.3952 1.05959 20.1999 0.999847 20 1H4C3.80012 0.999847 3.60479 1.05959 3.43919 1.17153C3.2736 1.28347 3.14535 1.44247 3.071 1.628L1.071 6.628C1.02414 6.74643 1.00005 6.87264 1 7V22C1 22.2652 1.10536 22.5196 1.29289 22.7071C1.48043 22.8946 1.73478 23 2 23H22C22.2652 23 22.5196 22.8946 22.7071 22.7071C22.8946 22.5196 23 22.2652 23 22V7C23 6.87264 22.9759 6.74643 22.929 6.628ZM4.677 3H19.323L20.523 6H3.477L4.677 3ZM3 21V8H21V21H3ZM15.707 13.293C15.8025 13.3852 15.8787 13.4956 15.9311 13.6176C15.9835 13.7396 16.0111 13.8708 16.0123 14.0036C16.0134 14.1364 15.9881 14.2681 15.9378 14.391C15.8875 14.5139 15.8133 14.6255 15.7194 14.7194C15.6255 14.8133 15.5139 14.8875 15.391 14.9378C15.2681 14.9881 15.1364 15.0134 15.0036 15.0123C14.8708 15.0111 14.7396 14.9835 14.6176 14.9311C14.4956 14.8787 14.3852 14.8025 14.293 14.707L13 13.414V18C13 18.2652 12.8946 18.5196 12.7071 18.7071C12.5196 18.8946 12.2652 19 12 19C11.7348 19 11.4804 18.8946 11.2929 18.7071C11.1054 18.5196 11 18.2652 11 18V13.414L9.707 14.707C9.5184 14.8892 9.2658 14.99 9.0036 14.9877C8.7414 14.9854 8.49059 14.8802 8.30518 14.6948C8.11977 14.5094 8.0146 14.2586 8.01233 13.9964C8.01005 13.7342 8.11084 13.4816 8.293 13.293L11.293 10.293C11.4805 10.1055 11.7348 10.0002 12 10.0002C12.2652 10.0002 12.5195 10.1055 12.707 10.293L15.707 13.293Z" fill="black"/>
+                              <div class="icon-action icon-see">
+                                  <a href="./thong-tin-chi-tiet-khach-hang.html">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0.0622299 8.346C1.77323 13 5.67523 16 10.0002 16C14.3252 16 18.2272 13 19.9382 8.346C20.0212 8.1228 20.0212 7.87721 19.9382 7.654C18.2272 3 14.3252 0 10.0002 0C5.67523 0 1.77323 3 0.0622299 7.654C-0.0207433 7.87721 -0.0207433 8.1228 0.0622299 8.346ZM10.0002 2C13.3732 2 16.4512 4.343 17.9292 8C16.4512 11.657 13.3732 14 10.0002 14C6.62723 14 3.54923 11.657 2.07123 8C3.54923 4.343 6.62723 2 10.0002 2ZM10.0002 12C10.7914 12 11.5647 11.7654 12.2225 11.3259C12.8803 10.8864 13.393 10.2616 13.6957 9.53073C13.9985 8.79983 14.0777 7.99556 13.9234 7.21964C13.769 6.44371 13.3881 5.73098 12.8287 5.17157C12.2692 4.61216 11.5565 4.2312 10.7806 4.07686C10.0047 3.92252 9.2004 4.00173 8.4695 4.30448C7.73859 4.60723 7.11388 5.11992 6.67435 5.77772C6.23483 6.43552 6.00023 7.20887 6.00023 8C6.00023 9.06087 6.42166 10.0783 7.1718 10.8284C7.92195 11.5786 8.93936 12 10.0002 12ZM10.0002 6C10.3958 6 10.7825 6.1173 11.1114 6.33706C11.4403 6.55682 11.6966 6.86918 11.848 7.23463C11.9994 7.60009 12.039 8.00222 11.9618 8.39018C11.8846 8.77814 11.6941 9.13451 11.4144 9.41421C11.1347 9.69392 10.7784 9.8844 10.3904 9.96157C10.0024 10.0387 9.60032 9.99913 9.23486 9.84776C8.86941 9.69638 8.55705 9.44004 8.33729 9.11114C8.11753 8.78224 8.00023 8.39556 8.00023 8C8.00023 7.46957 8.21094 6.96086 8.58602 6.58579C8.96109 6.21071 9.4698 6 10.0002 6Z" fill="black"/>
                                     </svg>
                                   </a>
                               </div>
@@ -1099,31 +971,20 @@
                           </td>
                         </tr>
                         <tr>
+                          <td>#123456789</td>
+                          <td>Nguyễn Duy</td>
                           <td>
-                            <div class="media align-items-center">
-                              <img class="align-self-center mr-3" src="./../assets/images/avatar/avatar-6.png" alt="Generic placeholder image">
-                              <div class="media-body">
-                                <h5 class="mt-0">Lốp Venturer AV568</h5>
-                              </div>
-                            </div>
+                            <p class="status-order processing">Online</p>
                           </td>
-                          <td>
-                            <p class="text-center danh-muc">Venturer</p>
-                          </td>
-                          <td class="text-center">159.000 đ</td>
-                          <td>
-                            <div class="cart-product__item-quantity justify-content-center">
-                              <button class="button-quantity">-</button>
-                              <input type="number" class="input" value="1" min="0" />
-                              <button class="button-quantity">+</button>
-                            </div>
-                          </td>
+                          <td>66.750.000 đ</td>
+                          <td>0905023563</td>
+                          <td>Quận 2, TP. HCM</td>
                           <td>
                             <div class="d-flex align-items-center justify-content-center">
-                              <div class="icon-action icon-cart ml-2">
-                                  <a href="#">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M22.929 6.628L20.929 1.628C20.8546 1.44247 20.7264 1.28347 20.5608 1.17153C20.3952 1.05959 20.1999 0.999847 20 1H4C3.80012 0.999847 3.60479 1.05959 3.43919 1.17153C3.2736 1.28347 3.14535 1.44247 3.071 1.628L1.071 6.628C1.02414 6.74643 1.00005 6.87264 1 7V22C1 22.2652 1.10536 22.5196 1.29289 22.7071C1.48043 22.8946 1.73478 23 2 23H22C22.2652 23 22.5196 22.8946 22.7071 22.7071C22.8946 22.5196 23 22.2652 23 22V7C23 6.87264 22.9759 6.74643 22.929 6.628ZM4.677 3H19.323L20.523 6H3.477L4.677 3ZM3 21V8H21V21H3ZM15.707 13.293C15.8025 13.3852 15.8787 13.4956 15.9311 13.6176C15.9835 13.7396 16.0111 13.8708 16.0123 14.0036C16.0134 14.1364 15.9881 14.2681 15.9378 14.391C15.8875 14.5139 15.8133 14.6255 15.7194 14.7194C15.6255 14.8133 15.5139 14.8875 15.391 14.9378C15.2681 14.9881 15.1364 15.0134 15.0036 15.0123C14.8708 15.0111 14.7396 14.9835 14.6176 14.9311C14.4956 14.8787 14.3852 14.8025 14.293 14.707L13 13.414V18C13 18.2652 12.8946 18.5196 12.7071 18.7071C12.5196 18.8946 12.2652 19 12 19C11.7348 19 11.4804 18.8946 11.2929 18.7071C11.1054 18.5196 11 18.2652 11 18V13.414L9.707 14.707C9.5184 14.8892 9.2658 14.99 9.0036 14.9877C8.7414 14.9854 8.49059 14.8802 8.30518 14.6948C8.11977 14.5094 8.0146 14.2586 8.01233 13.9964C8.01005 13.7342 8.11084 13.4816 8.293 13.293L11.293 10.293C11.4805 10.1055 11.7348 10.0002 12 10.0002C12.2652 10.0002 12.5195 10.1055 12.707 10.293L15.707 13.293Z" fill="black"/>
+                              <div class="icon-action icon-see">
+                                  <a href="./thong-tin-chi-tiet-khach-hang.html">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0.0622299 8.346C1.77323 13 5.67523 16 10.0002 16C14.3252 16 18.2272 13 19.9382 8.346C20.0212 8.1228 20.0212 7.87721 19.9382 7.654C18.2272 3 14.3252 0 10.0002 0C5.67523 0 1.77323 3 0.0622299 7.654C-0.0207433 7.87721 -0.0207433 8.1228 0.0622299 8.346ZM10.0002 2C13.3732 2 16.4512 4.343 17.9292 8C16.4512 11.657 13.3732 14 10.0002 14C6.62723 14 3.54923 11.657 2.07123 8C3.54923 4.343 6.62723 2 10.0002 2ZM10.0002 12C10.7914 12 11.5647 11.7654 12.2225 11.3259C12.8803 10.8864 13.393 10.2616 13.6957 9.53073C13.9985 8.79983 14.0777 7.99556 13.9234 7.21964C13.769 6.44371 13.3881 5.73098 12.8287 5.17157C12.2692 4.61216 11.5565 4.2312 10.7806 4.07686C10.0047 3.92252 9.2004 4.00173 8.4695 4.30448C7.73859 4.60723 7.11388 5.11992 6.67435 5.77772C6.23483 6.43552 6.00023 7.20887 6.00023 8C6.00023 9.06087 6.42166 10.0783 7.1718 10.8284C7.92195 11.5786 8.93936 12 10.0002 12ZM10.0002 6C10.3958 6 10.7825 6.1173 11.1114 6.33706C11.4403 6.55682 11.6966 6.86918 11.848 7.23463C11.9994 7.60009 12.039 8.00222 11.9618 8.39018C11.8846 8.77814 11.6941 9.13451 11.4144 9.41421C11.1347 9.69392 10.7784 9.8844 10.3904 9.96157C10.0024 10.0387 9.60032 9.99913 9.23486 9.84776C8.86941 9.69638 8.55705 9.44004 8.33729 9.11114C8.11753 8.78224 8.00023 8.39556 8.00023 8C8.00023 7.46957 8.21094 6.96086 8.58602 6.58579C8.96109 6.21071 9.4698 6 10.0002 6Z" fill="black"/>
                                     </svg>
                                   </a>
                               </div>
@@ -1133,7 +994,7 @@
                       </tbody>
                     </table>
                     <!-- Pagination -->
-                    <div class="list-order__pagination pt-2">
+                    <div class="list-order__pagination pt-3">
                       <ul class="pagination manrope-bold">
                         <li class="page-item page-item--sp"><a class="page-link" href="#">
                             <span class="svg-icon"><svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1158,9 +1019,88 @@
                       </ul>
                     </div>
                   </div>
-                  <!-- Scan QR Code -->
-                   <div class="d-flex align-items-center mt-4 pb-3 sub-title">
-                      <h5 class="primary-color">Scan QR Code</h5>
+                  <!-- ADD CUSTOMER khách mới -->
+                  <div class="d-flex align-items-center justify-content-between mt-3 mobile-colunm">
+                    <div class="sub-title pr-3 pt-2">
+                      <h6>A new customer? Enter information here to create a customer profile</h6>
+                    </div>
+                    <div class="filter-area">
+                      <a href="#" class="dark-btn" style="display:block;padding:12px 10px 10px 10px;" data-toggle="modal" data-target="#popup_create_new_customer">
+                          <span class="text-uppercase">ADD CUSTOMER</span>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Quét Scan QR Code -->
+                  <div class="d-flex align-items-center sub-title pb-3">
+                    <h5 class="primary-color">Scan QR Code</h5>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_4067_64602)">
+                        <circle cx="9.9987" cy="10.0002" r="8.16667" stroke="#CED0D8" stroke-width="2"/>
+                        <path d="M10 15L10 8.33333M10 5L10 6.66667" stroke="#CED0D8" stroke-width="2"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_4067_64602">
+                          <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                      </defs>
+                      </svg>
+                  </div>
+                  <p class="manrope-regular">Enter the QR code identified on the product or scan the QR code attached to the product using authorized  devices.</p>
+                  <form class="transfer-form" action="" method="get">
+                    <div class="d-flex align-items-end justify-content-between mobile-colunm">
+                      <div class="col-12 col-md-7 pl-0 pr-0">
+                        <div class="form-group mb-0">
+                          <div class="d-flex align-items-center pb-3 sub-title">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="24" height="24" fill="#A61C20"/>
+                              <path d="M19.3332 8.00016C19.3332 8.17697 19.2629 8.34654 19.1379 8.47157C19.0129 8.59659 18.8433 8.66683 18.6665 8.66683H11.9998C11.823 8.66683 11.6535 8.59659 11.5284 8.47157C11.4034 8.34654 11.3332 8.17697 11.3332 8.00016C11.3332 7.82335 11.4034 7.65378 11.5284 7.52876C11.6535 7.40373 11.823 7.3335 11.9998 7.3335H18.6665C18.8433 7.3335 19.0129 7.40373 19.1379 7.52876C19.2629 7.65378 19.3332 7.82335 19.3332 8.00016ZM18.6665 11.3335H11.9998C11.823 11.3335 11.6535 11.4037 11.5284 11.5288C11.4034 11.6538 11.3332 11.8234 11.3332 12.0002C11.3332 12.177 11.4034 12.3465 11.5284 12.4716C11.6535 12.5966 11.823 12.6668 11.9998 12.6668H18.6665C18.8433 12.6668 19.0129 12.5966 19.1379 12.4716C19.2629 12.3465 19.3332 12.177 19.3332 12.0002C19.3332 11.8234 19.2629 11.6538 19.1379 11.5288C19.0129 11.4037 18.8433 11.3335 18.6665 11.3335ZM18.6665 15.3335H11.9998C11.823 15.3335 11.6535 15.4037 11.5284 15.5288C11.4034 15.6538 11.3332 15.8234 11.3332 16.0002C11.3332 16.177 11.4034 16.3465 11.5284 16.4716C11.6535 16.5966 11.823 16.6668 11.9998 16.6668H18.6665C18.8433 16.6668 19.0129 16.5966 19.1379 16.4716C19.2629 16.3465 19.3332 16.177 19.3332 16.0002C19.3332 15.8234 19.2629 15.6538 19.1379 15.5288C19.0129 15.4037 18.8433 15.3335 18.6665 15.3335ZM5.33317 13.3335C5.15636 13.3335 4.98679 13.4037 4.86177 13.5288C4.73674 13.6538 4.6665 13.8234 4.6665 14.0002C4.6665 14.177 4.73674 14.3465 4.86177 14.4716C4.98679 14.5966 5.15636 14.6668 5.33317 14.6668H9.33317C9.50998 14.6668 9.67955 14.5966 9.80457 14.4716C9.9296 14.3465 9.99984 14.177 9.99984 14.0002C9.99984 13.8234 9.9296 13.6538 9.80457 13.5288C9.67955 13.4037 9.50998 13.3335 9.33317 13.3335H7.99984V10.0002C7.99989 9.88651 7.97089 9.77473 7.91558 9.67545C7.86028 9.57616 7.78051 9.49266 7.68386 9.43288C7.5872 9.37309 7.47687 9.33901 7.36333 9.33387C7.2498 9.32873 7.13683 9.35269 7.03517 9.4035L5.70184 10.0702C5.54359 10.1492 5.42322 10.2879 5.36721 10.4556C5.3112 10.6234 5.32414 10.8066 5.40317 10.9648C5.48221 11.1231 5.62087 11.2434 5.78865 11.2995C5.95643 11.3555 6.13959 11.3425 6.29784 11.2635L6.6665 11.0788V13.3335H5.33317Z" fill="white"/>
+                            </svg>
+                            <h6 class="primary-color pl-2">Scan by product QRcode</h6>
+                          </div>
+                          <input name="product_code" type="text" class="transfer-form__input" placeholder="Eg: AVZ72501996" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-5 pl-4 pr-0 mobile-p-0">
+                        <a href="#" class="primary-btn btn-check-code" style="display:block;padding:15px 44px;" id="btn-check-code">
+                          <span class="text-uppercase">TRACE</span>
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="d-flex align-items-center justify-content-between mt-4 mb-4 mobile-colunm">
+                    <div class="col-12 col-md-7 pl-0 pr-0">
+                      <div class="d-flex align-items-center pt-1 sub-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="24" height="24" fill="#A61C20"/>
+                          <path d="M18.0002 5.3335H14.0002C13.8234 5.3335 13.6538 5.40373 13.5288 5.52876C13.4037 5.65378 13.3335 5.82335 13.3335 6.00016V10.0002C13.3335 10.177 13.4037 10.3465 13.5288 10.4716C13.6538 10.5966 13.8234 10.6668 14.0002 10.6668H14.6668V12.0002H16.0002V10.6668H17.3335V12.0002H18.6668V6.00016C18.6668 5.82335 18.5966 5.65378 18.4716 5.52876C18.3465 5.40373 18.177 5.3335 18.0002 5.3335ZM16.0002 9.3335H14.6668V6.66683H17.3335V9.3335H16.0002ZM6.00016 10.6668H10.0002C10.177 10.6668 10.3465 10.5966 10.4716 10.4716C10.5966 10.3465 10.6668 10.177 10.6668 10.0002V6.00016C10.6668 5.82335 10.5966 5.65378 10.4716 5.52876C10.3465 5.40373 10.177 5.3335 10.0002 5.3335H6.00016C5.82335 5.3335 5.65378 5.40373 5.52876 5.52876C5.40373 5.65378 5.3335 5.82335 5.3335 6.00016V10.0002C5.3335 10.177 5.40373 10.3465 5.52876 10.4716C5.65378 10.5966 5.82335 10.6668 6.00016 10.6668ZM6.66683 6.66683H9.3335V9.3335H6.66683V6.66683ZM7.3335 14.6668V16.0002H6.00016V14.6668H7.3335ZM6.00016 17.3335H7.3335V18.6668H6.00016V17.3335ZM8.66683 16.0002V17.3335H7.3335V16.0002H8.66683ZM8.66683 14.6668H7.3335V13.3335H8.66683V12.0002H10.0002V14.6668H8.66683ZM7.3335 12.0002V13.3335H6.00016V12.0002H7.3335ZM13.3335 14.0002V14.6668H12.6668V13.3335H11.3335V16.0002H13.3335V18.0002C13.3335 18.177 13.4037 18.3465 13.5288 18.4716C13.6538 18.5966 13.8234 18.6668 14.0002 18.6668H18.0002C18.177 18.6668 18.3465 18.5966 18.4716 18.4716C18.5966 18.3465 18.6668 18.177 18.6668 18.0002V14.0002C18.6668 13.8234 18.5966 13.6538 18.4716 13.5288C18.3465 13.4037 18.177 13.3335 18.0002 13.3335H14.6668V12.0002H13.3335V14.0002ZM17.3335 14.6668V17.3335H14.6668V14.6668H17.3335ZM10.0002 16.0002H11.3335V17.3335H12.0002V18.6668H8.66683V17.3335H10.0002V16.0002ZM12.6668 8.00016H11.3335V6.66683H12.6668V8.00016ZM11.3335 9.3335H12.6668V12.0002H11.3335V9.3335ZM7.3335 7.3335H8.66683V8.66683H7.3335V7.3335ZM15.3335 7.3335H16.6668V8.66683H15.3335V7.3335ZM16.6668 16.6668H15.3335V15.3335H16.6668V16.6668Z" fill="white"/>
+                        </svg>
+                        <h6 class="primary-color pl-2">Scan by product QR code</h6>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-5 pl-4 pr-0 mobile-p-0">
+                      <a href="#" class="pt-2 pb-2 d-flex align-items-center justify-content-center btn-scan-code">
+                        <svg class="mr-0 ml-0" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5346 2.697C13.568 2.75527 13.6263 2.79689 13.7013 2.79689C15.7013 2.79689 17.3346 4.42841 17.3346 6.42619V11.3707C17.3346 13.3685 15.7013 15 13.7013 15H4.3013C2.29297 15 0.667969 13.3685 0.667969 11.3707V6.42619C0.667969 4.42841 2.29297 2.79689 4.3013 2.79689C4.36797 2.79689 4.43464 2.7636 4.45964 2.697L4.50964 2.59711C4.53836 2.53665 4.56785 2.47455 4.59778 2.4115C4.81097 1.96246 5.04682 1.46567 5.19297 1.1737C5.5763 0.424528 6.2263 0.00832408 7.03464 0H10.9596C11.768 0.00832408 12.4263 0.424528 12.8096 1.1737C12.9409 1.43592 13.1409 1.85833 13.3336 2.26545C13.3734 2.34942 13.4128 2.43274 13.4513 2.51387L13.5346 2.697ZM12.9263 5.89345C12.9263 6.30966 13.2596 6.64262 13.6763 6.64262C14.093 6.64262 14.4346 6.30966 14.4346 5.89345C14.4346 5.47725 14.093 5.13596 13.6763 5.13596C13.2596 5.13596 12.9263 5.47725 12.9263 5.89345ZM7.55964 7.18368C7.9513 6.79245 8.45964 6.58435 9.0013 6.58435C9.54297 6.58435 10.0513 6.79245 10.4346 7.17536C10.818 7.55827 11.0263 8.06604 11.0263 8.6071C11.018 9.72253 10.118 10.6299 9.0013 10.6299C8.45964 10.6299 7.9513 10.4218 7.56797 10.0388C7.18464 9.65594 6.9763 9.14817 6.9763 8.6071V8.59878C6.96797 8.07436 7.1763 7.56659 7.55964 7.18368ZM11.3096 10.9212C10.718 11.5122 9.9013 11.8785 9.0013 11.8785C8.1263 11.8785 7.30964 11.5372 6.68464 10.9212C6.06797 10.2969 5.7263 9.48113 5.7263 8.6071C5.71797 7.7414 6.05964 6.92564 6.6763 6.30133C7.3013 5.67703 8.1263 5.33574 9.0013 5.33574C9.8763 5.33574 10.7013 5.67703 11.318 6.29301C11.9346 6.91731 12.2763 7.7414 12.2763 8.6071C12.268 9.51443 11.9013 10.3302 11.3096 10.9212Z" fill="#DA251C"/>
+                        </svg>
+                        <span class="pl-2">Approve device access</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center p-2 mb-3 noti-scan-qr scan-success">
+                    <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.547 0L20.5 4.325L7.8 16L0.5 8.68L4.636 4.533L7.974 7.88L16.547 0Z" fill="#02961C"/>
+                    </svg>
+                    <span class="pl-2 text-content-noti">Scan QR Code successfully, product has been added to the order</span>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center p-2 mb-3 noti-scan-qr scan-fail">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 0C8.52219 0 6.58879 0.58649 4.9443 1.6853C3.29981 2.78412 2.01809 4.3459 1.26121 6.17317C0.504333 8.00043 0.306299 10.0111 0.692152 11.9509C1.078 13.8907 2.03041 15.6725 3.42894 17.0711C4.82746 18.4696 6.60929 19.422 8.5491 19.8079C10.4889 20.1937 12.4996 19.9957 14.3268 19.2388C16.1541 18.4819 17.7159 17.2002 18.8147 15.5557C19.9135 13.9112 20.5 11.9778 20.5 10C20.5 8.68678 20.2413 7.38642 19.7388 6.17317C19.2363 4.95991 18.4997 3.85752 17.5711 2.92893C16.6425 2.00035 15.5401 1.26375 14.3268 0.761205C13.1136 0.258658 11.8132 0 10.5 0ZM9.5 5C9.5 4.73478 9.60536 4.48043 9.7929 4.29289C9.98043 4.10536 10.2348 4 10.5 4C10.7652 4 11.0196 4.10536 11.2071 4.29289C11.3946 4.48043 11.5 4.73478 11.5 5V11C11.5 11.2652 11.3946 11.5196 11.2071 11.7071C11.0196 11.8946 10.7652 12 10.5 12C10.2348 12 9.98043 11.8946 9.7929 11.7071C9.60536 11.5196 9.5 11.2652 9.5 11V5ZM10.5 17C10.2033 17 9.91332 16.912 9.66665 16.7472C9.41998 16.5824 9.22772 16.3481 9.11419 16.074C9.00065 15.7999 8.97095 15.4983 9.02883 15.2074C9.0867 14.9164 9.22957 14.6491 9.43934 14.4393C9.64912 14.2296 9.9164 14.0867 10.2074 14.0288C10.4983 13.9709 10.7999 14.0007 11.074 14.1142C11.3481 14.2277 11.5824 14.42 11.7472 14.6666C11.912 14.9133 12 15.2033 12 15.5C12 15.8978 11.842 16.2794 11.5607 16.5607C11.2794 16.842 10.8978 17 10.5 17Z" fill="#A71C20"/>
+                    </svg>
+                    <span class="pl-2 text-content-noti">QR Code is invalid, please enter or scan the product code again</span>
+                </div>
+                  <!-- Order information -->
+                  <div class="d-flex align-items-center pb-3 mt-3 sub-title">
+                      <h5 class="primary-color">Order information</h5>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_4067_64602)">
                           <circle cx="9.9987" cy="10.0002" r="8.16667" stroke="#CED0D8" stroke-width="2"/>
@@ -1173,9 +1113,9 @@
                       </defs>
                       </svg>
                   </div>
-                  <div class="p-3 mb-5 sp-cho-muon">
+                  <div class="p-3 mb-5 mt-2 sp-cho-muon">
                     <div class="d-flex align-items-center pt-1 sub-title">
-                      <h5>Order details</h5>
+                      <h5>Order Details</h5>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_4067_64602)">
                           <circle cx="9.9987" cy="10.0002" r="8.16667" stroke="#CED0D8" stroke-width="2"/>
@@ -1189,19 +1129,21 @@
                       </svg>
                     </div>
                     <div class="mt-2 table-content">
-                      <table class="table table-custom table-responsive-md">
+                      <table class="table table-custom table-responsive-md table-info-lending-order">
                         <thead>
                           <tr>
-                            <th scope="col">Product</th>
-                            <th scope="col" class="text-center">Unit price</th>
+                            <th scope="col">Product Serial</th>
+                            <th scope="col" class="text-center">Name</th>
+                            <th scope="col" class="text-center">QR Code</th>
+                            <th scope="col" class="text-center">Unit Price</th>
                             <th scope="col" class="text-center">Quantity</th>
                             <th scope="col" class="text-center">Price</th>
-                            <th scope="col" class="text-center">Scan QR</th>
                             <th scope="col">Tasks</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
+                            <td class="text-center">AVZ72501996</td>
                             <td>
                               <div class="media align-items-center">
                                 <img class="align-self-center mr-3" src="./../assets/images/avatar/avatar-6.png" alt="Generic placeholder image">
@@ -1210,32 +1152,18 @@
                                 </div>
                               </div>
                             </td>
+                            <td class="text-center">LSX0101202</td>
                             <td class="text-center">159.000 đ</td>
                             <td>
                               <div class="cart-product__item-quantity justify-content-center">
                                 <button class="button-quantity">-</button>
-                                <input type="number" class="input" value="1" min="0" />
+                                <input type="number" class="input" value="10" min="0" />
                                 <button class="button-quantity">+</button>
                               </div>
                             </td>
                             <td class="text-center">159.000 đ</td>
                             <td>
-                              <div class="d-flex align-items-center justify-content-center btn-quet-ma-qr" data-toggle="modal" data-target="#popup_scan_qr">
-                                  <p class="mb-0 pr-2 text-quet-qr">Scan QR</p>
-                                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M16.5013 0.666016H11.5013C11.2803 0.666016 11.0683 0.753813 10.912 0.910093C10.7558 1.06637 10.668 1.27834 10.668 1.49935V6.49935C10.668 6.72036 10.7558 6.93232 10.912 7.0886C11.0683 7.24488 11.2803 7.33268 11.5013 7.33268H12.3346V8.99935H14.0013V7.33268H15.668V8.99935H17.3346V1.49935C17.3346 1.27834 17.2468 1.06637 17.0906 0.910093C16.9343 0.753813 16.7223 0.666016 16.5013 0.666016ZM14.0013 5.66602H12.3346V2.33268H15.668V5.66602H14.0013ZM1.5013 7.33268H6.5013C6.72232 7.33268 6.93428 7.24488 7.09056 7.0886C7.24684 6.93232 7.33464 6.72036 7.33464 6.49935V1.49935C7.33464 1.27834 7.24684 1.06637 7.09056 0.910093C6.93428 0.753813 6.72232 0.666016 6.5013 0.666016H1.5013C1.28029 0.666016 1.06833 0.753813 0.912046 0.910093C0.755766 1.06637 0.667969 1.27834 0.667969 1.49935V6.49935C0.667969 6.72036 0.755766 6.93232 0.912046 7.0886C1.06833 7.24488 1.28029 7.33268 1.5013 7.33268ZM2.33464 2.33268H5.66797V5.66602H2.33464V2.33268ZM3.16797 12.3327V13.9993H1.5013V12.3327H3.16797ZM1.5013 15.666H3.16797V17.3327H1.5013V15.666ZM4.83464 13.9993V15.666H3.16797V13.9993H4.83464ZM4.83464 12.3327H3.16797V10.666H4.83464V8.99935H6.5013V12.3327H4.83464ZM3.16797 8.99935V10.666H1.5013V8.99935H3.16797ZM10.668 11.4993V12.3327H9.83464V10.666H8.16797V13.9993H10.668V16.4993C10.668 16.7204 10.7558 16.9323 10.912 17.0886C11.0683 17.2449 11.2803 17.3327 11.5013 17.3327H16.5013C16.7223 17.3327 16.9343 17.2449 17.0906 17.0886C17.2468 16.9323 17.3346 16.7204 17.3346 16.4993V11.4993C17.3346 11.2783 17.2468 11.0664 17.0906 10.9101C16.9343 10.7538 16.7223 10.666 16.5013 10.666H12.3346V8.99935H10.668V11.4993ZM15.668 12.3327V15.666H12.3346V12.3327H15.668ZM6.5013 13.9993H8.16797V15.666H9.0013V17.3327H4.83464V15.666H6.5013V13.9993ZM9.83464 3.99935H8.16797V2.33268H9.83464V3.99935ZM8.16797 5.66602H9.83464V8.99935H8.16797V5.66602ZM3.16797 3.16602H4.83464V4.83268H3.16797V3.16602ZM13.168 3.16602H14.8346V4.83268H13.168V3.16602ZM14.8346 14.8327H13.168V13.166H14.8346V14.8327Z" fill="#C9161D"></path>
-                                  </svg>
-                              </div>
-                            </td>
-                            <td>
                               <div class="d-flex align-items-center justify-content-center">
-                                <div class="icon-action icon-see">
-                                    <a href="# ">
-                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.00001 11.9998C4.00001 12.265 3.89466 12.5194 3.70712 12.7069C3.51958 12.8945 3.26523 12.9998 3.00001 12.9998C2.7348 12.9998 2.48044 12.8945 2.29291 12.7069C2.10537 12.5194 2.00001 12.265 2.00001 11.9998C1.99685 10.1155 2.52706 8.26868 3.52937 6.67299C4.53168 5.07731 5.96514 3.79789 7.66402 2.98265C9.3629 2.16742 11.2578 1.84965 13.1297 2.0661C15.0016 2.28255 16.774 3.02438 18.242 4.20581V2.75781C18.242 2.4926 18.3474 2.23824 18.5349 2.05071C18.7224 1.86317 18.9768 1.75781 19.242 1.75781C19.5072 1.75781 19.7616 1.86317 19.9491 2.05071C20.1367 2.23824 20.242 2.4926 20.242 2.75781V6.75781C20.242 7.02303 20.1367 7.27738 19.9491 7.46492C19.7616 7.65246 19.5072 7.75781 19.242 7.75781H15.242C14.9768 7.75781 14.7224 7.65246 14.5349 7.46492C14.3474 7.27738 14.242 7.02303 14.242 6.75781C14.242 6.4926 14.3474 6.23824 14.5349 6.05071C14.7224 5.86317 14.9768 5.75781 15.242 5.75781H16.985C15.8101 4.81472 14.3924 4.22322 12.8956 4.05162C11.3987 3.88003 9.88393 4.13535 8.52607 4.78809C7.1682 5.44082 6.02267 6.46436 5.22179 7.74047C4.42091 9.01658 3.99734 10.4932 4.00001 11.9998ZM21 10.9998C20.7348 10.9998 20.4804 11.1052 20.2929 11.2927C20.1054 11.4802 20 11.7346 20 11.9998C20.0027 13.5064 19.5791 14.983 18.7782 16.2592C17.9774 17.5353 16.8318 18.5588 15.474 19.2115C14.1161 19.8643 12.6013 20.1196 11.1045 19.948C9.60767 19.7764 8.18994 19.1849 7.01501 18.2418H8.75701C9.02223 18.2418 9.27658 18.1365 9.46412 17.9489C9.65166 17.7614 9.75701 17.507 9.75701 17.2418C9.75701 16.9766 9.65166 16.7222 9.46412 16.5347C9.27658 16.3472 9.02223 16.2418 8.75701 16.2418H4.75701C4.4918 16.2418 4.23744 16.3472 4.04991 16.5347C3.86237 16.7222 3.75701 16.9766 3.75701 17.2418V21.2418C3.75701 21.507 3.86237 21.7614 4.04991 21.9489C4.23744 22.1365 4.4918 22.2418 4.75701 22.2418C5.02223 22.2418 5.27658 22.1365 5.46412 21.9489C5.65166 21.7614 5.75701 21.507 5.75701 21.2418V19.7938C7.22512 20.9751 8.99757 21.7169 10.8695 21.9333C12.7414 22.1497 14.6363 21.8319 16.3352 21.0167C18.0341 20.2015 19.4677 18.9221 20.4701 17.3265C21.4725 15.7309 22.0029 13.8842 22 11.9998C22 11.7346 21.8947 11.4802 21.7071 11.2927C21.5196 11.1052 21.2652 10.9998 21 10.9998Z" fill="black"/>
-                                      </svg>
-                                    </a>
-                                </div>
                                 <div class="icon-action icon-cart ml-2">
                                     <a href="#">
                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1247,6 +1175,7 @@
                             </td>
                           </tr>
                           <tr>
+                            <td class="text-center">AVZ72501996</td>
                             <td>
                               <div class="media align-items-center">
                                 <img class="align-self-center mr-3" src="./../assets/images/avatar/avatar-6.png" alt="Generic placeholder image">
@@ -1255,32 +1184,18 @@
                                 </div>
                               </div>
                             </td>
+                            <td class="text-center">LSX0101202</td>
                             <td class="text-center">159.000 đ</td>
                             <td>
                               <div class="cart-product__item-quantity justify-content-center">
                                 <button class="button-quantity">-</button>
-                                <input type="number" class="input" value="1" min="0" />
+                                <input type="number" class="input" value="10" min="0" />
                                 <button class="button-quantity">+</button>
                               </div>
                             </td>
                             <td class="text-center">159.000 đ</td>
                             <td>
-                              <div class="d-flex align-items-center justify-content-center btn-quet-ma-qr" data-toggle="modal" data-target="#popup_scan_qr">
-                                  <p class="mb-0 pr-2 text-quet-qr">Scan QR</p>
-                                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M16.5013 0.666016H11.5013C11.2803 0.666016 11.0683 0.753813 10.912 0.910093C10.7558 1.06637 10.668 1.27834 10.668 1.49935V6.49935C10.668 6.72036 10.7558 6.93232 10.912 7.0886C11.0683 7.24488 11.2803 7.33268 11.5013 7.33268H12.3346V8.99935H14.0013V7.33268H15.668V8.99935H17.3346V1.49935C17.3346 1.27834 17.2468 1.06637 17.0906 0.910093C16.9343 0.753813 16.7223 0.666016 16.5013 0.666016ZM14.0013 5.66602H12.3346V2.33268H15.668V5.66602H14.0013ZM1.5013 7.33268H6.5013C6.72232 7.33268 6.93428 7.24488 7.09056 7.0886C7.24684 6.93232 7.33464 6.72036 7.33464 6.49935V1.49935C7.33464 1.27834 7.24684 1.06637 7.09056 0.910093C6.93428 0.753813 6.72232 0.666016 6.5013 0.666016H1.5013C1.28029 0.666016 1.06833 0.753813 0.912046 0.910093C0.755766 1.06637 0.667969 1.27834 0.667969 1.49935V6.49935C0.667969 6.72036 0.755766 6.93232 0.912046 7.0886C1.06833 7.24488 1.28029 7.33268 1.5013 7.33268ZM2.33464 2.33268H5.66797V5.66602H2.33464V2.33268ZM3.16797 12.3327V13.9993H1.5013V12.3327H3.16797ZM1.5013 15.666H3.16797V17.3327H1.5013V15.666ZM4.83464 13.9993V15.666H3.16797V13.9993H4.83464ZM4.83464 12.3327H3.16797V10.666H4.83464V8.99935H6.5013V12.3327H4.83464ZM3.16797 8.99935V10.666H1.5013V8.99935H3.16797ZM10.668 11.4993V12.3327H9.83464V10.666H8.16797V13.9993H10.668V16.4993C10.668 16.7204 10.7558 16.9323 10.912 17.0886C11.0683 17.2449 11.2803 17.3327 11.5013 17.3327H16.5013C16.7223 17.3327 16.9343 17.2449 17.0906 17.0886C17.2468 16.9323 17.3346 16.7204 17.3346 16.4993V11.4993C17.3346 11.2783 17.2468 11.0664 17.0906 10.9101C16.9343 10.7538 16.7223 10.666 16.5013 10.666H12.3346V8.99935H10.668V11.4993ZM15.668 12.3327V15.666H12.3346V12.3327H15.668ZM6.5013 13.9993H8.16797V15.666H9.0013V17.3327H4.83464V15.666H6.5013V13.9993ZM9.83464 3.99935H8.16797V2.33268H9.83464V3.99935ZM8.16797 5.66602H9.83464V8.99935H8.16797V5.66602ZM3.16797 3.16602H4.83464V4.83268H3.16797V3.16602ZM13.168 3.16602H14.8346V4.83268H13.168V3.16602ZM14.8346 14.8327H13.168V13.166H14.8346V14.8327Z" fill="#C9161D"></path>
-                                  </svg>
-                              </div>
-                            </td>
-                            <td>
                               <div class="d-flex align-items-center justify-content-center">
-                                <div class="icon-action icon-see">
-                                    <a href="# ">
-                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.00001 11.9998C4.00001 12.265 3.89466 12.5194 3.70712 12.7069C3.51958 12.8945 3.26523 12.9998 3.00001 12.9998C2.7348 12.9998 2.48044 12.8945 2.29291 12.7069C2.10537 12.5194 2.00001 12.265 2.00001 11.9998C1.99685 10.1155 2.52706 8.26868 3.52937 6.67299C4.53168 5.07731 5.96514 3.79789 7.66402 2.98265C9.3629 2.16742 11.2578 1.84965 13.1297 2.0661C15.0016 2.28255 16.774 3.02438 18.242 4.20581V2.75781C18.242 2.4926 18.3474 2.23824 18.5349 2.05071C18.7224 1.86317 18.9768 1.75781 19.242 1.75781C19.5072 1.75781 19.7616 1.86317 19.9491 2.05071C20.1367 2.23824 20.242 2.4926 20.242 2.75781V6.75781C20.242 7.02303 20.1367 7.27738 19.9491 7.46492C19.7616 7.65246 19.5072 7.75781 19.242 7.75781H15.242C14.9768 7.75781 14.7224 7.65246 14.5349 7.46492C14.3474 7.27738 14.242 7.02303 14.242 6.75781C14.242 6.4926 14.3474 6.23824 14.5349 6.05071C14.7224 5.86317 14.9768 5.75781 15.242 5.75781H16.985C15.8101 4.81472 14.3924 4.22322 12.8956 4.05162C11.3987 3.88003 9.88393 4.13535 8.52607 4.78809C7.1682 5.44082 6.02267 6.46436 5.22179 7.74047C4.42091 9.01658 3.99734 10.4932 4.00001 11.9998ZM21 10.9998C20.7348 10.9998 20.4804 11.1052 20.2929 11.2927C20.1054 11.4802 20 11.7346 20 11.9998C20.0027 13.5064 19.5791 14.983 18.7782 16.2592C17.9774 17.5353 16.8318 18.5588 15.474 19.2115C14.1161 19.8643 12.6013 20.1196 11.1045 19.948C9.60767 19.7764 8.18994 19.1849 7.01501 18.2418H8.75701C9.02223 18.2418 9.27658 18.1365 9.46412 17.9489C9.65166 17.7614 9.75701 17.507 9.75701 17.2418C9.75701 16.9766 9.65166 16.7222 9.46412 16.5347C9.27658 16.3472 9.02223 16.2418 8.75701 16.2418H4.75701C4.4918 16.2418 4.23744 16.3472 4.04991 16.5347C3.86237 16.7222 3.75701 16.9766 3.75701 17.2418V21.2418C3.75701 21.507 3.86237 21.7614 4.04991 21.9489C4.23744 22.1365 4.4918 22.2418 4.75701 22.2418C5.02223 22.2418 5.27658 22.1365 5.46412 21.9489C5.65166 21.7614 5.75701 21.507 5.75701 21.2418V19.7938C7.22512 20.9751 8.99757 21.7169 10.8695 21.9333C12.7414 22.1497 14.6363 21.8319 16.3352 21.0167C18.0341 20.2015 19.4677 18.9221 20.4701 17.3265C21.4725 15.7309 22.0029 13.8842 22 11.9998C22 11.7346 21.8947 11.4802 21.7071 11.2927C21.5196 11.1052 21.2652 10.9998 21 10.9998Z" fill="black"/>
-                                      </svg>
-                                    </a>
-                                </div>
                                 <div class="icon-action icon-cart ml-2">
                                     <a href="#">
                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1290,34 +1205,31 @@
                                 </div>
                               </div>
                             </td>
+                          </tr>
                         </tbody>
                       </table>
                     </div>
-                    <div class="d-flex align-items-center pt-2 sub-title">
-                      <h5>Order Summary</h5>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_4067_64602)">
-                          <circle cx="9.9987" cy="10.0002" r="8.16667" stroke="#CED0D8" stroke-width="2"/>
-                          <path d="M10 15L10 8.33333M10 5L10 6.66667" stroke="#CED0D8" stroke-width="2"/>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_4067_64602">
-                            <rect width="20" height="20" fill="white"/>
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
                     <div class="d-flex justify-content-between row-info">
-                      <p class="label-info">Total</p>
-                      <p class="value-info">31.710.000 đ</p>
+                      <div class="d-flex align-items-center pt-2 sub-title">
+                        <h5>Order Summary</h5>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_4067_64602)">
+                            <circle cx="9.9987" cy="10.0002" r="8.16667" stroke="#CED0D8" stroke-width="2"/>
+                            <path d="M10 15L10 8.33333M10 5L10 6.66667" stroke="#CED0D8" stroke-width="2"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_4067_64602">
+                              <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                      <p class="value-info">Total: 31.710.000 đ</p>
                     </div>
                     <div class="mt-3 mb-2 d-flex align-items-center justify-content-end footer-detail-product footer-don-hang-npp">
-                        <a href="#" class="mr-2 dark-btn" data-toggle="modal" data-target="#popup_scan_qr">
-                            <span class="text-uppercase">Active Warranty</span>
-                        </a>
-                        <a href="#" class="primary-btn">
-                            <span class="text-uppercase">PLACE ORDER</span>
-                        </a>
+                      <a href="#" class="primary-btn" data-toggle="modal" data-target="#popup_noti_order">
+                          <span class="text-uppercase">PlACE ORDER</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -2035,7 +1947,7 @@
     </div>
   </div>
   <!-- Popup scan QR code -->
-  <div class="modal fade popup-filter popup-scan popup-scan-new popup-khbh" id="popup_scan_qr" tabindex="-1" role="dialog" aria-labelledby="popupFilter" aria-hidden="true">
+  <div class="modal fade popup-filter popup-scan popup-scan-new popup-khbh" id="popup_noti_order" tabindex="-1" role="dialog" aria-labelledby="popupFilter" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered model-right-container">
       <div class="modal-content">
           <div class="modal-body">
@@ -2044,71 +1956,22 @@
               <path d="M10.1833 18.9331L14.1164 15L10.1833 11.0669C10.0694 10.949 10.0064 10.7911 10.0078 10.6272C10.0093 10.4634 10.075 10.3066 10.1909 10.1907C10.3068 10.0748 10.4635 10.0091 10.6274 10.0077C10.7913 10.0063 10.9491 10.0693 11.067 10.1831L15.0001 14.1162L18.9333 10.1831C18.9909 10.1234 19.0599 10.0758 19.1361 10.0431C19.2124 10.0103 19.2944 9.99305 19.3774 9.99233C19.4604 9.99161 19.5427 10.0074 19.6195 10.0389C19.6963 10.0703 19.7661 10.1167 19.8248 10.1754C19.8834 10.2341 19.9298 10.3038 19.9613 10.3806C19.9927 10.4575 20.0085 10.5398 20.0078 10.6227C20.0071 10.7057 19.9898 10.7877 19.9571 10.864C19.9243 10.9402 19.8767 11.0092 19.817 11.0669L15.8839 15L19.817 18.9331C19.8767 18.9908 19.9243 19.0597 19.9571 19.136C19.9898 19.2122 20.0071 19.2943 20.0078 19.3772C20.0085 19.4602 19.9927 19.5425 19.9613 19.6193C19.9298 19.6961 19.8834 19.7659 19.8248 19.8246C19.7661 19.8833 19.6963 19.9297 19.6195 19.9611C19.5427 19.9926 19.4604 20.0084 19.3774 20.0076C19.2944 20.0069 19.2124 19.9897 19.1361 19.9569C19.0599 19.9242 18.9909 19.8766 18.9333 19.8169L15.0001 15.8837L11.067 19.8169C10.9491 19.9307 10.7913 19.9937 10.6274 19.9923C10.4635 19.9909 10.3068 19.9251 10.1909 19.8093C10.075 19.6934 10.0093 19.5366 10.0078 19.3727C10.0064 19.2089 10.0694 19.051 10.1833 18.9331Z" fill="white"></path>
             </svg>
             <div class="mb-3 text-center">
-              <h4 class="utl-hanzel">SCAN PRODUCT QR CODE</h4>
+              <h4 class="utl-hanzel">DISTRIBUTOR’S ORDER</h4>
             </div>
-            <section class="mt-4 section-chung-nhan" id="input-code">
-              <div class="d-flex justify-content-center align-items-center p-2 mb-3 noti-scan-qr scan-fail">
-                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.5 0C8.52219 0 6.58879 0.58649 4.9443 1.6853C3.29981 2.78412 2.01809 4.3459 1.26121 6.17317C0.504333 8.00043 0.306299 10.0111 0.692152 11.9509C1.078 13.8907 2.03041 15.6725 3.42894 17.0711C4.82746 18.4696 6.60929 19.422 8.5491 19.8079C10.4889 20.1937 12.4996 19.9957 14.3268 19.2388C16.1541 18.4819 17.7159 17.2002 18.8147 15.5557C19.9135 13.9112 20.5 11.9778 20.5 10C20.5 8.68678 20.2413 7.38642 19.7388 6.17317C19.2363 4.95991 18.4997 3.85752 17.5711 2.92893C16.6425 2.00035 15.5401 1.26375 14.3268 0.761205C13.1136 0.258658 11.8132 0 10.5 0ZM9.5 5C9.5 4.73478 9.60536 4.48043 9.7929 4.29289C9.98043 4.10536 10.2348 4 10.5 4C10.7652 4 11.0196 4.10536 11.2071 4.29289C11.3946 4.48043 11.5 4.73478 11.5 5V11C11.5 11.2652 11.3946 11.5196 11.2071 11.7071C11.0196 11.8946 10.7652 12 10.5 12C10.2348 12 9.98043 11.8946 9.7929 11.7071C9.60536 11.5196 9.5 11.2652 9.5 11V5ZM10.5 17C10.2033 17 9.91332 16.912 9.66665 16.7472C9.41998 16.5824 9.22772 16.3481 9.11419 16.074C9.00065 15.7999 8.97095 15.4983 9.02883 15.2074C9.0867 14.9164 9.22957 14.6491 9.43934 14.4393C9.64912 14.2296 9.9164 14.0867 10.2074 14.0288C10.4983 13.9709 10.7999 14.0007 11.074 14.1142C11.3481 14.2277 11.5824 14.42 11.7472 14.6666C11.912 14.9133 12 15.2033 12 15.5C12 15.8978 11.842 16.2794 11.5607 16.5607C11.2794 16.842 10.8978 17 10.5 17Z" fill="#A71C20"/>
-                  </svg>
-                  <span class="pl-2 text-content-noti">QR Code is invalid</span>
-              </div>
-              <div class="nav-step-cart input-code-area">
-                <div class="d-flex align-items-center step-item active">
-                  <span class="numer-step">1</span>
-                  <span class="text-step">Scan by product QRcode</span>
-                </div>
-                <div class="mt-3 input-code-form">
-                  <form class="transfer-form" action="" method="get">
-                    <div class="form-group">
-                      <label for="" class="c-text-base manrope-bold text-center">
-                        Enter QRcode
-                      </label>
-                      <input name="product_code" type="text" class="transfer-form__input" placeholder="vd: AVZ72501996" required>
-                    </div>
-                    <a href="#" class="mt-3 primary-btn btn-check-code" id="btn-check-code">
-                      <span class="text-uppercase">TRACE</span>
-                    </a>
-                  </form>
-                </div>
-              </div>
-              <div class="mt-5 nav-step-cart scan-qr-area">
-                <div class="d-flex align-items-center step-item active">
-                  <span class="numer-step">2</span>
-                  <span class="text-step">Scan by product QR code</span>
-                </div>
-                <div class="mt-5 text-center area-scan">
-                    <img src="../assets/images/avatar/scan-code.png" alt="Scan code">
-                    <p class="pt-3 pb-3 text-code">To start tracing using product QR code, please use your authorized device to scan the code on the product.</p>
-                    <a href="#" class="mt-3 pt-1 pb-1 d-flex align-items-center justify-content-center btn-scan-code">
-                      <svg class="mr-0 ml-0" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5346 2.697C13.568 2.75527 13.6263 2.79689 13.7013 2.79689C15.7013 2.79689 17.3346 4.42841 17.3346 6.42619V11.3707C17.3346 13.3685 15.7013 15 13.7013 15H4.3013C2.29297 15 0.667969 13.3685 0.667969 11.3707V6.42619C0.667969 4.42841 2.29297 2.79689 4.3013 2.79689C4.36797 2.79689 4.43464 2.7636 4.45964 2.697L4.50964 2.59711C4.53836 2.53665 4.56785 2.47455 4.59778 2.4115C4.81097 1.96246 5.04682 1.46567 5.19297 1.1737C5.5763 0.424528 6.2263 0.00832408 7.03464 0H10.9596C11.768 0.00832408 12.4263 0.424528 12.8096 1.1737C12.9409 1.43592 13.1409 1.85833 13.3336 2.26545C13.3734 2.34942 13.4128 2.43274 13.4513 2.51387L13.5346 2.697ZM12.9263 5.89345C12.9263 6.30966 13.2596 6.64262 13.6763 6.64262C14.093 6.64262 14.4346 6.30966 14.4346 5.89345C14.4346 5.47725 14.093 5.13596 13.6763 5.13596C13.2596 5.13596 12.9263 5.47725 12.9263 5.89345ZM7.55964 7.18368C7.9513 6.79245 8.45964 6.58435 9.0013 6.58435C9.54297 6.58435 10.0513 6.79245 10.4346 7.17536C10.818 7.55827 11.0263 8.06604 11.0263 8.6071C11.018 9.72253 10.118 10.6299 9.0013 10.6299C8.45964 10.6299 7.9513 10.4218 7.56797 10.0388C7.18464 9.65594 6.9763 9.14817 6.9763 8.6071V8.59878C6.96797 8.07436 7.1763 7.56659 7.55964 7.18368ZM11.3096 10.9212C10.718 11.5122 9.9013 11.8785 9.0013 11.8785C8.1263 11.8785 7.30964 11.5372 6.68464 10.9212C6.06797 10.2969 5.7263 9.48113 5.7263 8.6071C5.71797 7.7414 6.05964 6.92564 6.6763 6.30133C7.3013 5.67703 8.1263 5.33574 9.0013 5.33574C9.8763 5.33574 10.7013 5.67703 11.318 6.29301C11.9346 6.91731 12.2763 7.7414 12.2763 8.6071C12.268 9.51443 11.9013 10.3302 11.3096 10.9212Z" fill="#DA251C"/>
-                      </svg>
-                      <span class="pl-2">Approve device access</span>
-                    </a>
-                </div>
-              </div>
-            </section>
             <!-- Quét QR thành công nhưng chưa kích hoạt bảo hành -->
-            <section class="scan-qr-success kich-hoat-bao-hanh d-none">
+            <section class="scan-qr-success kich-hoat-bao-hanh">
                 <div class="d-flex justify-content-center align-items-center p-2 mb-3 noti-scan-qr scan-success">
                   <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.547 0L20.5 4.325L7.8 16L0.5 8.68L4.636 4.533L7.974 7.88L16.547 0Z" fill="#02961C"/>
                   </svg>
-                  <span class="pl-2 text-content-noti">Scan QR Code successfully</span>
-                </div>
-                <div class="status-bao-hanh">
-                  <p>Warranty status: <span class="chua-kich-hoat">Not activated</span><span class="da-kich-hoat d-none">Activated</span></p>
+                  <span class="pl-2 text-content-noti">Order has been placed successfully</span>
                 </div>
                 <div class="mt-3 mb-2 d-flex align-items-center justify-content-between footer-detail-product footer-popup-kich-hoat-bao-hanh">
-                  <a href="#" class="btn-none-style" id="back-scan-qr">
+                  <a href="#" class="btn-none-style" data-dismiss="modal" aria-label="Close">
                       <span>Back</span>
                   </a>
-                  <a href="#" class="primary-btn btn-kich-hoat" id="btn-kich-hoat">
-                      <span class="text-uppercase">Active Warranty</span>
-                  </a>
-                  <a href="#" class="dark-btn btn-xem-chung-nhan d-none" data-toggle="modal" data-target="#popup_certification">
-                      <span class="text-uppercase">VIEW CERTIFICATE</span>
+                  <a href="./so-nhat-ky-don-hang-ban.html" class="primary-btn">
+                      <span class="text-uppercase">ORDER DETAILS</span>
                   </a>
                 </div>
             </section>
@@ -2116,8 +1979,8 @@
       </div>
     </div>
   </div>
-   <!-- Popup scan QR code -->
-  <div class="modal fade popup-filter popup-scan-new find-customers" id="popup_find_customer" tabindex="-1" role="dialog" aria-labelledby="popupFilter" aria-hidden="true">
+   <!-- Popup create new customer -->
+  <div class="modal fade popup-filter popup-scan-new popup_create_new_customer" id="popup_create_new_customer" tabindex="-1" role="dialog" aria-labelledby="popupFilter" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered model-right-container">
       <div class="modal-content">
           <div class="modal-body">
@@ -2126,119 +1989,64 @@
               <path d="M10.1833 18.9331L14.1164 15L10.1833 11.0669C10.0694 10.949 10.0064 10.7911 10.0078 10.6272C10.0093 10.4634 10.075 10.3066 10.1909 10.1907C10.3068 10.0748 10.4635 10.0091 10.6274 10.0077C10.7913 10.0063 10.9491 10.0693 11.067 10.1831L15.0001 14.1162L18.9333 10.1831C18.9909 10.1234 19.0599 10.0758 19.1361 10.0431C19.2124 10.0103 19.2944 9.99305 19.3774 9.99233C19.4604 9.99161 19.5427 10.0074 19.6195 10.0389C19.6963 10.0703 19.7661 10.1167 19.8248 10.1754C19.8834 10.2341 19.9298 10.3038 19.9613 10.3806C19.9927 10.4575 20.0085 10.5398 20.0078 10.6227C20.0071 10.7057 19.9898 10.7877 19.9571 10.864C19.9243 10.9402 19.8767 11.0092 19.817 11.0669L15.8839 15L19.817 18.9331C19.8767 18.9908 19.9243 19.0597 19.9571 19.136C19.9898 19.2122 20.0071 19.2943 20.0078 19.3772C20.0085 19.4602 19.9927 19.5425 19.9613 19.6193C19.9298 19.6961 19.8834 19.7659 19.8248 19.8246C19.7661 19.8833 19.6963 19.9297 19.6195 19.9611C19.5427 19.9926 19.4604 20.0084 19.3774 20.0076C19.2944 20.0069 19.2124 19.9897 19.1361 19.9569C19.0599 19.9242 18.9909 19.8766 18.9333 19.8169L15.0001 15.8837L11.067 19.8169C10.9491 19.9307 10.7913 19.9937 10.6274 19.9923C10.4635 19.9909 10.3068 19.9251 10.1909 19.8093C10.075 19.6934 10.0093 19.5366 10.0078 19.3727C10.0064 19.2089 10.0694 19.051 10.1833 18.9331Z" fill="white"></path>
             </svg>
             <div class="mb-3 text-center">
-              <h4 class="utl-hanzel primary-color">CUSTOMER SEARCH</h4>
+              <h4 class="utl-hanzel primary-color">ADD NEW CUSTOMER</h4>
             </div>
-            <div class="list-right">
-              <div class="row ml-0 mr-0 mt-3 search-header find-customer">
-                <div class="shop__search-wrapper full-width">
-                  <label for="product_search" class="shop__search-icon">
-                      <span class="svg-icon">
-                          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M2.02 11.4981C3.17395 12.6536 4.71064 13.3474 6.34058 13.4485C7.97053 13.5497 9.5812 13.0513 10.8692 12.0472L15.3008 16.4789C15.458 16.6307 15.6685 16.7147 15.887 16.7128C16.1055 16.7109 16.3145 16.6233 16.469 16.4688C16.6235 16.3142 16.7112 16.1052 16.7131 15.8867C16.715 15.6682 16.631 15.4577 16.4792 15.3006L12.0475 10.8689C13.0961 9.52321 13.5918 7.8282 13.4337 6.12955C13.2755 4.4309 12.4753 2.85657 11.1962 1.72763C9.91721 0.598683 8.2557 0.000166774 6.55055 0.0541382C4.84541 0.10811 3.22508 0.810504 2.02 2.01807C1.39733 2.64043 0.903387 3.37936 0.566384 4.19267C0.22938 5.00597 0.0559235 5.87771 0.0559235 6.75807C0.0559235 7.63844 0.22938 8.51017 0.566384 9.32348C0.903387 10.1368 1.39733 10.8757 2.02 11.4981ZM3.19834 3.19807C4.02215 2.37428 5.1061 1.86161 6.26552 1.7474C7.42495 1.6332 8.5881 1.92453 9.5568 2.57176C10.5255 3.21899 11.2398 4.18207 11.5781 5.29692C11.9163 6.41177 11.8576 7.60941 11.4118 8.68579C10.966 9.76217 10.1609 10.6507 9.13344 11.2C8.10602 11.7493 6.91994 11.9253 5.77727 11.6982C4.6346 11.471 3.60604 10.8547 2.86683 9.95419C2.12763 9.0537 1.72351 7.92477 1.72334 6.75974C1.72105 6.09772 1.85026 5.44183 2.10346 4.83014C2.35666 4.21845 2.72882 3.66313 3.19834 3.19641V3.19807Z" fill="black"/>
-                          </svg>
-                      </span>
-                  </label>
-                  <input class="shop__search-input manrope-bold " type="text" name="q" placeholder="Enter name or customer code" />
-                </div>
-                <div class="mt-4 table-content w-100">
-                  <table class="table table-custom table-checkbox table-responsive-md table-info-customer">
-                    <thead>
-                      <tr>
-                        <th scope="col">Code</th>
-                        <th scope="col" class="text-center">Name</th>
-                        <th scope="col" class="text-right">Contact</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>#123456789</td>
-                        <td class="text-center">Lê Nguyên</td>
-                        <td class="text-right">0905023563</td>
-                      </tr>
-                      <tr>
-                        <td>#123456789</td>
-                        <td class="text-center">Lê Nguyên</td>
-                        <td class="text-right">0905023563</td>
-                      </tr>
-                      <tr>
-                        <td>#123456789</td>
-                        <td class="text-center">Lê Nguyên</td>
-                        <td class="text-right">0905023563</td>
-                      </tr>
-                      <tr>
-                        <td>#123456789</td>
-                        <td class="text-center">Lê Nguyên</td>
-                        <td class="text-right">0905023563</td>
-                      </tr>
-                      <tr>
-                        <td>#123456789</td>
-                        <td class="text-center">Lê Nguyên</td>
-                        <td class="text-right">0905023563</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <!-- Pagination -->
-                    <div class="list-order__pagination">
-                      <ul class="pagination manrope-bold">
-                        <li class="page-item page-item--sp"><a class="page-link" href="#">
-                            <span class="svg-icon"><svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.64012 0.812493C4.53247 0.762356 4.41282 0.74373 4.29502 0.758773C4.17722 0.773816 4.06609 0.821912 3.97449 0.897494L0.224493 4.02249C0.153937 4.08115 0.0971587 4.15461 0.0581915 4.23768C0.0192243 4.32074 -0.000976562 4.41137 -0.000976562 4.50312C-0.000976562 4.59487 0.0192243 4.68549 0.0581915 4.76856C0.0971587 4.85162 0.153937 4.92509 0.224493 4.98374L3.97449 8.10874C4.08763 8.20083 4.22924 8.25076 4.37512 8.24999C4.46676 8.25009 4.55728 8.22981 4.64012 8.19062C4.74766 8.14027 4.83863 8.06034 4.90238 7.96016C4.96614 7.85999 5.00004 7.74373 5.00012 7.62499V1.37499C4.99945 1.25679 4.96527 1.14119 4.90155 1.04163C4.83783 0.942064 4.74718 0.862612 4.64012 0.812493ZM3.75012 6.29062L1.60137 4.49999L3.75012 2.70937V6.29062Z" fill="black"/>
-                            </svg>
-                            </span>
-                            <span>Prev</span></a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><span>...</span></li>
-                        <li class="page-item"><a class="page-link" href="#">8</a></li>
-                        <li class="page-item page-item--sp"><a class="page-link" href="#">
-                            <span>Next</span>
-                            <span class="svg-icon svg-icon--right">
-                                <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.359881 0.812493C0.467534 0.762356 0.587183 0.74373 0.704981 0.758773C0.822779 0.773816 0.933909 0.821912 1.02551 0.897494L4.77551 4.02249C4.84606 4.08115 4.90284 4.15461 4.94181 4.23768C4.98078 4.32074 5.00098 4.41137 5.00098 4.50312C5.00098 4.59487 4.98078 4.68549 4.94181 4.76856C4.90284 4.85162 4.84606 4.92509 4.77551 4.98374L1.02551 8.10874C0.91237 8.20083 0.770757 8.25076 0.624881 8.24999C0.533239 8.25009 0.442721 8.22981 0.359881 8.19062C0.252344 8.14027 0.161373 8.06034 0.0976171 7.96016C0.0338616 7.85999 -3.95775e-05 7.74373 -0.000118256 7.62499V1.37499C0.000552177 1.25679 0.0347309 1.14119 0.0984521 1.04163C0.162173 0.942064 0.252823 0.862612 0.359881 0.812493ZM1.24988 6.29062L3.39863 4.49999L1.24988 2.70937V6.29062Z" fill="black"/>
-                                </svg>
-                            </span>
-                            </a>
-                        </li>
-                      </ul>
+            <p class="mt-2 mb-2">Please fill in all information so that the warranty activation process can be received most conveniently and quickly. Note: Items marked * are mandatory information fields</p>
+            <div class="mt-4 transfer-form">
+              <div class="form-group">
+                <label for="" class="c-text-base manrope-bold">Full name *</label>
+                <input name="full_name" type="text" class="transfer-form__input" placeholder="Your name">
+              </div>
+              <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="" class="c-text-base manrope-bold">Contact *</label>
+                      <input name="phone_number" type="text" class="transfer-form__input" placeholder="Phone number">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="" class="c-text-base manrope-bold">Zalo Contact</label>
+                      <input name="zalo" type="text" class="transfer-form__input" placeholder="Zalo number">
                     </div>
                   </div>
               </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <!-- Popup certification -->
-  <div class="modal fade popup-filter popup-certification" id="popup_certification" tabindex="-1" role="dialog" aria-labelledby="popupFilter" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered model-right-container">
-      <div class="modal-content">
-          <div class="modal-body">
-            <div class="text-center header-content-popup">
-              <svg class="icon-close" data-dismiss="modal" aria-label="Close" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="22.5" cy="22.5" r="22.5" fill="white"/>
-                <path d="M15.2749 28.3995L21.1746 22.4998L15.2749 16.6001C15.1041 16.4233 15.0096 16.1865 15.0118 15.9407C15.0139 15.6949 15.1125 15.4597 15.2863 15.2859C15.4601 15.1121 15.6953 15.0135 15.9411 15.0114C16.1869 15.0092 16.4237 15.1037 16.6005 15.2745L22.5002 21.1742L28.3999 15.2745C28.4864 15.1849 28.5898 15.1135 28.7042 15.0644C28.8186 15.0153 28.9416 14.9894 29.0661 14.9883C29.1906 14.9872 29.314 15.011 29.4292 15.0581C29.5444 15.1052 29.6491 15.1748 29.7371 15.2629C29.8252 15.3509 29.8948 15.4556 29.9419 15.5708C29.989 15.686 30.0128 15.8094 30.0117 15.9339C30.0106 16.0584 29.9847 16.1814 29.9356 16.2958C29.8865 16.4102 29.8151 16.5136 29.7255 16.6001L23.8258 22.4998L29.7255 28.3995C29.8151 28.486 29.8865 28.5894 29.9356 28.7038C29.9847 28.8182 30.0106 28.9412 30.0117 29.0657C30.0128 29.1902 29.989 29.3136 29.9419 29.4288C29.8948 29.544 29.8252 29.6487 29.7371 29.7367C29.6491 29.8248 29.5444 29.8944 29.4292 29.9415C29.314 29.9886 29.1906 30.0124 29.0661 30.0113C28.9416 30.0102 28.8186 29.9843 28.7042 29.9352C28.5898 29.8861 28.4864 29.8147 28.3999 29.7251L22.5002 23.8254L16.6005 29.7251C16.4237 29.8959 16.1869 29.9904 15.9411 29.9882C15.6953 29.9861 15.4601 29.8875 15.2863 29.7137C15.1125 29.5399 15.0139 29.3047 15.0118 29.0589C15.0096 28.8131 15.1041 28.5763 15.2749 28.3995Z" fill="#17161A"/>
-              </svg>
-              <img src="../assets/images/vi/logo-popup-cef-vi.png" alt="logo">
-              <p class="sub-title">THE SOUTHERN RUBBER INDUSTRY JOINT STOCK COMPANY</p>
-              <h3 class="title">CASUMINA</h3>
-            </div>
-            <div class="text-center main-content-popup">
-              <h2 class="title-main">CERTIFICATE <br>GENUINE PRODUCT</h2>
-              <div class="info-qr">
-                <img src="../assets/images/qr-code.png" alt="QR code">
-                <p>Product Name: <span>Venturer AV568</span></p>
-                <p>Product code: <span>AVZ72501966</span></p>
-                <p>Warranty status: <span>Activated</span></p>
+              <div class="form-group">
+                <label for="" class="c-text-base manrope-bold">Email address</label>
+                <input name="email_order" type="email" class="transfer-form__input" placeholder="Your email address">
+              </div>
+              <div class="form-group">
+                  <label for="" class="c-text-base manrope-bold">Address</label>
+                  <input name="address_detail" type="text" class="transfer-form__input" placeholder="Detail address">
+              </div>
+              <div class="form-group">
+                <label for="" class="c-text-base manrope-bold">City/Provice</label>
+                <div class="shop__dropdown">
+                    <select class="ui dropdown" id="option_city"></select>
+                </div>
+              </div>
+              <div class="row" id="group-city-option">
+                  <div class="col-6">
+                      <div class="form-group">
+                        <label for="" class="c-text-base manrope-bold">District</label>
+                        <div class="shop__dropdown">
+                            <select class="ui dropdown" id="option_district"></select>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="form-group">
+                        <label for="" class="c-text-base manrope-bold">Ward</label>
+                        <div class="shop__dropdown">
+                            <select class="ui dropdown" id="option_ward"></select>
+                        </div>
+                      </div>
+                  </div>
               </div>
             </div>
-            <div class="line-custom"></div>
-            <div class="text-center footer-content-popup">
-              <p><strong>Headquarters:</strong><br>180 Nguyen Thi Minh Khai,<br> Vo Thi Sau Ward, District 3, City. Ho Chi Minh City</p>
-              <p class="pt-3"><strong>Phone:</strong> (028) 38 362 369 - 362 373</p>
-              <p><strong>Fax:</strong> (028) 38 362 376</p>
-              <p><strong>Email:</strong> casumina@casumina.com.vn</p>
-            </div>
+            <a href="#" class="primary-btn" style="display: block;">
+              <span class="text-uppercase">CREATE NEW CUSTOMER</span>
+            </a>
           </div>
       </div>
     </div>

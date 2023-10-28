@@ -1004,5 +1004,8 @@ $(document).ready(function () {
             $(".popup-scan-new .btn-xem-chung-nhan").addClass('d-none');
             $(".popup-scan-new #btn-kich-hoat").removeClass('d-none');
         });
+        $('#popup_create_new_customer').on('show.bs.modal', function () {
+            DaiLyAction.loadData();
+        });
     }
 });
