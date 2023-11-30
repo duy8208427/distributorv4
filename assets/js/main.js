@@ -943,6 +943,9 @@ $(document).ready(function () {
         $("#option_city").dropdown();
         $("#option_outlet").dropdown();
     }
+    if ($(".customer-area-choose").height() > 0) {
+        $("#choose_customer").dropdown();
+    }
     if ($('#content-chung-nhan').height() > 0) {
         DaiLyAction.stepChungNhan();
     }
