@@ -898,35 +898,29 @@
                   </div>
                   <!-- Lấy thông tin khách cũ -->
                   <div class="row mt-3 mb-3 customer-area-choose">
-                      <div class="col-12">
-                          <div class="form-group">
-                            <div class="shop__dropdown">
-                              <select class="ui dropdown" id="choose_customer">
-                                  <option value="">Vui lòng chọn khác hàng</option>
-                                  <option value="123456786">
-                                    <span class="pr-2">Lê Nguyên</span>
-                                    <span>(0123456789)</span>
-                                  </option>
-                                  <option value="123456785">
-                                    <span class="pr-2">Lê Nguyên</span>
-                                    <span>(0123456789)</span>
-                                  </option>
-                                  <option value="123456784">
-                                    <span class="pr-2">Nguyễn Duy Khoa</span>
-                                    <span>(0123456789)</span>
-                                  </option>
-                                  <option value="123456783">
-                                    <span class="pr-2">Nguyễn Dương</span>
-                                    <span>(0123456789)</span>
-                                  </option>
-                                  <option value="123456782">
-                                    <span class="pr-2">Nguyễn Kiên</span>
-                                    <span>(0123456789)</span>
-                                  </option>
-                              </select>
+                    <div class="col-12">
+                        <div class="form-group shop__dropdown">
+                          <div class="ui fluid search selection dropdown" id="choose_customer">
+                              <input type="hidden" name="customer">
+                              <i class="dropdown icon"></i>
+                              <div class="default text">Vui lòng nhập tên để tìm kiếm khách hàng</div>
+                              <div class="menu">
+                                <div class="item" data-value="Lê Nguyên (0123456789)"><i class="user icon"></i>
+                                  <span class="pr-2">Lê Nguyên</span><span>(0123456789)</span>
+                                </div>
+                                <div class="item" data-value="Nguyễn Duy Khoa (0123456789)"><i class="user icon"></i>
+                                  <span class="pr-2">Nguyễn Duy Khoa</span><span>(0123456789)</span>
+                                </div>
+                                <div class="item" data-value="Nguyễn Dương (0123456789)"><i class="user icon"></i>
+                                  <span class="pr-2">Nguyễn Dương</span><span>(0123456789)</span>
+                                </div>
+                                <div class="item" data-value="Nguyễn Kiên (0123456789)"><i class="user icon"></i>
+                                  <span class="pr-2">Nguyễn Kiên</span><span>(0123456789)</span>
+                                </div>
                             </div>
                           </div>
-                      </div>
+                        </div>
+                    </div>
                   </div>
                   <!-- Nhập thông tin khách mới -->
                   <div class="d-flex align-items-center justify-content-between mt-3 mobile-colunm">
@@ -1902,9 +1896,25 @@
             </div>
             <p class="mt-2 mb-2">Vui lòng điền đầy đủ thông tin để quá trình kích hoạt bảo hành được tiếp nhận một cách thuận tiện và nhanh chóng nhất. Lưu ý: Những mục đánh dấu * là những mục thông tin bắt buộc</p>
             <div class="mt-4 transfer-form">
-              <div class="form-group">
-                <label for="" class="c-text-base manrope-bold">Tên đẩu đủ *</label>
-                <input name="full_name" type="text" class="transfer-form__input" placeholder="Họ và Tên">
+              <div class="row">
+                <div class="col-8">
+                  <div class="form-group">
+                    <label for="" class="c-text-base manrope-bold">Tên đẩu đủ *</label>
+                    <input name="full_name" type="text" class="transfer-form__input" placeholder="Họ và Tên">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="" class="c-text-base manrope-bold">Giới tính *</label>
+                    <div class="shop__dropdown">
+                      <select class="ui dropdown survey_gender_2" id="survey_gender_2">
+                          <option value="1">Nam</option>
+                          <option value="2">Nữ</option>
+                          <option value="0">Khác</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="row">
                   <div class="col-6">
@@ -1923,6 +1933,24 @@
               <div class="form-group">
                 <label for="" class="c-text-base manrope-bold">Email đặt hàng *</label>
                 <input name="email_order" type="email" class="transfer-form__input" placeholder="Địa chỉ Email">
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="" class="c-text-base manrope-bold">
+                          Dòng xe đang sử dụng
+                          </label>
+                          <input name="type_car" type="text" class="transfer-form__input" placeholder="Loại xe đang chạy">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="" class="c-text-base manrope-bold">
+                          Biển số xe
+                          </label>
+                          <input name="bien_so" type="text" class="transfer-form__input" placeholder="Biển số xe đã đăng ký">
+                      </div>
+                  </div>
               </div>
               <div class="form-group">
                   <label for="" class="c-text-base manrope-bold">Địa chỉ chi tiết</label>

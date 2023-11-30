@@ -897,36 +897,30 @@
                       </svg>
                   </div>
                   <!-- Lấy thông tin khách cũ -->
-                   <div class="row mt-3 mb-3 customer-area-choose">
-                      <div class="col-12">
-                          <div class="form-group">
-                            <div class="shop__dropdown">
-                              <select class="ui dropdown" id="choose_customer">
-                                  <option value="">Please choose customer</option>
-                                  <option value="123456786">
-                                    <span class="pr-2">Lê Nguyên</span>
-                                    <span>(0123456789)</span>
-                                  </option>
-                                  <option value="123456785">
-                                    <span class="pr-2">Lê Nguyên</span>
-                                    <span>(0123456789)</span>
-                                  </option>
-                                  <option value="123456784">
-                                    <span class="pr-2">Nguyễn Duy Khoa</span>
-                                    <span>(0123456789)</span>
-                                  </option>
-                                  <option value="123456783">
-                                    <span class="pr-2">Nguyễn Dương</span>
-                                    <span>(0123456789)</span>
-                                  </option>
-                                  <option value="123456782">
-                                    <span class="pr-2">Nguyễn Kiên</span>
-                                    <span>(0123456789)</span>
-                                  </option>
-                              </select>
+                  <div class="row mt-3 mb-3 customer-area-choose">
+                    <div class="col-12">
+                        <div class="form-group shop__dropdown">
+                          <div class="ui fluid search selection dropdown" id="choose_customer">
+                              <input type="hidden" name="customer">
+                              <i class="dropdown icon"></i>
+                              <div class="default text">Please enter name to search for customers</div>
+                              <div class="menu">
+                                <div class="item" data-value="Lê Nguyên (0123456789)"><i class="user icon"></i>
+                                  <span class="pr-2">Lê Nguyên</span><span>(0123456789)</span>
+                                </div>
+                                <div class="item" data-value="Nguyễn Duy Khoa (0123456789)"><i class="user icon"></i>
+                                  <span class="pr-2">Nguyễn Duy Khoa</span><span>(0123456789)</span>
+                                </div>
+                                <div class="item" data-value="Nguyễn Dương (0123456789)"><i class="user icon"></i>
+                                  <span class="pr-2">Nguyễn Dương</span><span>(0123456789)</span>
+                                </div>
+                                <div class="item" data-value="Nguyễn Kiên (0123456789)"><i class="user icon"></i>
+                                  <span class="pr-2">Nguyễn Kiên</span><span>(0123456789)</span>
+                                </div>
                             </div>
                           </div>
-                      </div>
+                        </div>
+                    </div>
                   </div>
                   <!-- ADD CUSTOMER khách mới -->
                   <div class="d-flex align-items-center justify-content-between mt-3 mobile-colunm">
@@ -1902,9 +1896,25 @@
             </div>
             <p class="mt-2 mb-2">Please fill in all information so that the warranty activation process can be received most conveniently and quickly. Note: Items marked * are mandatory information fields</p>
             <div class="mt-4 transfer-form">
-              <div class="form-group">
-                <label for="" class="c-text-base manrope-bold">Full name *</label>
-                <input name="full_name" type="text" class="transfer-form__input" placeholder="Your name">
+              <div class="row">
+                <div class="col-8">
+                  <div class="form-group">
+                    <label for="" class="c-text-base manrope-bold">Full name *</label>
+                    <input name="full_name" type="text" class="transfer-form__input" placeholder="Your name">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="" class="c-text-base manrope-bold">Gender *</label>
+                    <div class="shop__dropdown">
+                      <select class="ui dropdown survey_gender_2" id="survey_gender_2">
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                          <option value="0">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="row">
                   <div class="col-6">
@@ -1923,6 +1933,24 @@
               <div class="form-group">
                 <label for="" class="c-text-base manrope-bold">Email address *</label>
                 <input name="email_order" type="email" class="transfer-form__input" placeholder="Your email address">
+              </div>
+              <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="" class="c-text-base manrope-bold">
+                        Vehicles in use
+                        </label>
+                        <input name="type_car" type="text" class="transfer-form__input" placeholder="Type of vehicle being driven">
+                    </div>
+                </div>
+                <div class="col-6">
+                      <div class="form-group">
+                        <label for="" class="c-text-base manrope-bold">
+                        License plates
+                        </label>
+                        <input name="bien_so" type="text" class="transfer-form__input" placeholder="License plates registered">
+                    </div>
+                </div>
               </div>
               <div class="form-group">
                   <label for="" class="c-text-base manrope-bold">Address</label>
