@@ -19,7 +19,22 @@ h3.title-small{
     background-color: #DFDFDF;
     opacity: 0.5;
 }
+.text-normal{
+    font-family: "Manrope-Regular" !important;
+}
 .dashboard-welcome {
+    .dark-btn-mobile{
+        &:hover{
+            background-color: var(--primary-color) !important;
+            color: #fff !important;
+        }
+    }
+    .primary-btn-mobile{
+        &:hover{
+            background-color: var(--color-dark-btn) !important;
+            color: #fff !important;
+        }
+    }
     .box-menu{
         border-radius: 8px;
         border: 1px solid var(--Primary, #A61C20);
@@ -63,7 +78,8 @@ h3.title-small{
                     background-color: #fff;
                     color: var(--primary-color);
                     &:hover{
-                        color: #2E2E2E;
+                        color: #fff;
+                        background-color: var(--color-dark-btn);
                     }
                 }
             }
@@ -124,6 +140,18 @@ h3.title-small{
     }
 }
 .management-page{
+    .dark-btn-mobile{
+        &:hover{
+            background-color: var(--primary-color) !important;
+            color: #fff !important;
+        }
+    }
+    .primary-btn-mobile{
+        &:hover{
+            background-color: var(--color-dark-btn) !important;
+            color: #fff !important;
+        }
+    }
     .sub-title{
         h5{
             font-family: "Manrope-Bold";
@@ -326,6 +354,124 @@ h3.title-small{
             }
             &>.align-items-center{
                 width: auto;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .w-md-auto{
+        width: auto !important;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    .list-right__header{
+        margin-top: 0 !important;
+    }
+    .menu-left-mobile{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .menu-left{
+        display: none !important;
+    }
+    .menu-left-mobile{
+        .dashboard-item{
+            h6{
+                font-size: 26px;
+            }
+            &.active, &:hover{
+                h6{
+                    color: var(--primary-color);
+                }
+            }
+        }
+        .item-menu{
+            a{
+                display: flex;
+                align-items: center;
+                padding: 16px 24px;
+                border-radius: 8px;
+                border: 1px solid#DFDFDF;
+                background: #F9F9F9;
+                .icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 32px;
+                    background: #828084;
+                    margin-right: 24px;
+                    svg{
+                        path{
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+            &:hover, &.active{
+                a{
+                    border: 1px solid var(--primary-color);
+                    color: var(--primary-color);
+                    .icon{
+                        background: var(--primary-color);
+                    }
+                    .name-item{
+                        font-family: "Manrope-Bold" !important;
+                    }
+                }
+            }
+        }
+    }
+    .list-right{
+        padding-top: 0 !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .account-settings{
+        .title-section{
+            .title{
+                h2{
+                    font-size: 28px !important;
+                }
+            }
+        }
+    }
+    .management-page{
+        .title-section{
+            .title{
+                h2{
+                    font-size: 28px !important;
+                }
+            }
+        }
+        .list-status-order{
+            overflow-x: auto;
+        }
+        .contact-btn-mobile{
+            background: var(--color-dark-btn);
+            color: #fff;
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 4px;
+            svg{
+                path{
+                    fill: #fff;
+                }
+            }
+            &:hover{
+                background-color: var(--primary-color) !important;
+                color: #fff !important;
+                svg{
+                    path{
+                        fill: #fff !important;
+                    }
+                }
             }
         }
     }
