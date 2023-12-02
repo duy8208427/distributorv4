@@ -932,7 +932,9 @@ const DaiLyAction = {
     }
 }
 $(document).ready(function () {
-    DaiLyAction.fixedLeftMenu();
+    if ($(".dai-ly-management").height() > 0) {
+        DaiLyAction.fixedLeftMenu();
+    }
     if ($(".dai-ly-management").height() > 0 && $(window).width() < 992) {
         DaiLyAction.activeMenuMobile();
     }
@@ -972,11 +974,15 @@ $(document).ready(function () {
 });
 
 $(window).on("scroll", function () {
-    DaiLyAction.fixedLeftMenu();
+    if($(".dai-ly-management").height() > 0) {
+        DaiLyAction.fixedLeftMenu();
+    }
 });
 
 $( window ).on( "resize", function() {
-    DaiLyAction.fixedLeftMenu();
+    if($(".dai-ly-management").height() > 0) {
+        DaiLyAction.fixedLeftMenu();
+    }
 });
 
 $(document).ready(function () {

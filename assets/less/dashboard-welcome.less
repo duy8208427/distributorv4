@@ -1,0 +1,332 @@
+.menu-left .dashboard-item.active h6{
+    color: var(--primary-color);
+}
+.text-none{
+    text-transform: none !important;
+}
+h4.title-small{
+    font-size: 17px;
+}
+h3.title-small{
+    font-size: 20px;
+}
+.title-normal{
+    font-size: 26px;
+}
+.line-dark{
+    height: 1px;
+    width: 100%;
+    background-color: #DFDFDF;
+    opacity: 0.5;
+}
+.dashboard-welcome {
+    .box-menu{
+        border-radius: 8px;
+        border: 1px solid var(--Primary, #A61C20);
+        background: #FAF3F3;
+        padding: 24px;
+        &:hover{
+            background: #C9161D;
+            .title-normal,
+            p{
+                color: #fff;
+            }
+            svg{
+                circle{
+                    fill: #fff;
+                }
+                path{
+                    fill: var(--primary-color);
+                }
+            }
+        }
+    }
+    .box-trai-nghiem{
+        .item-box{
+            padding: 24px 16px ;
+            border-radius: 8px;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            a{
+                width: 100%;
+                height: 48px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16.8px !important;
+                padding: 0 !important;
+                &.light-btn{
+                    background-color: #fff;
+                    color: var(--primary-color);
+                    &:hover{
+                        color: #2E2E2E;
+                    }
+                }
+            }
+            &.san-pham-noi-bat{
+                background: url(../images/user-pages/bg-box-trai-nghiem.png) no-repeat center center;
+                background-size: cover;
+                .title-small, p{
+                    color: #fff;
+                }
+            }
+            &.tim-kiem-san-pham{
+                background: url(../images/user-pages/bg-box-trai-nghiem-1.png) no-repeat center center;
+                background-size: cover;
+                border: 1px solid var(--primary-color);
+                .title-small, p{
+                    color: #2E2E2E;
+                }
+            }
+            &.huong-dan-mua-hang{
+                background: url(../images/user-pages/bg-box-trai-nghiem-2.png) no-repeat center center;
+                background-size: cover;
+                .title-small, p{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .box-support{
+        border-radius: 8px;
+        border: 1px solid var(--Primary, #A61C20);
+        background: #FAF3F3;
+        padding: 32px;
+        .item-support{
+            height: 100%;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0px 4px 60px 0px rgba(4, 6, 15, 0.05), 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+            .icon{
+                margin-right: 30px;
+            }
+             &:hover{
+                background: #C9161D;
+                .title-small,
+                p{
+                    color: #fff;
+                }
+                svg{
+                    circle{
+                        fill: #fff;
+                    }
+                    path{
+                        fill: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+.management-page{
+    .sub-title{
+        h5{
+            font-family: "Manrope-Bold";
+            font-weight: 700 !important;
+            font-size: 18px;
+            color: #30373D;
+            padding-right: 10px;
+        }
+    }
+    .name-product-detail {
+        font-family: "Manrope-Bold";
+        font-size: 15px;
+    }
+    .list-status-order{
+        .item-status{
+            min-width: 170px;
+            padding: 13px 10px;
+            text-align: center;
+            &.active{
+                border-radius: 8px 8px 0px 0px;
+                background: rgba(201, 22, 29, 0.05);
+                &::before{
+                    bottom: 0px !important;
+                }
+            }
+        }
+    }
+    .shop__search-wrapper{
+        border-radius: 8px;
+        border: 1px solid #DFDFDF;
+        background:  #F9F9F9;
+        box-shadow: 0px 4px 60px 0px rgba(4, 6, 15, 0.10);
+    }
+    .item-order{
+        border-radius: 8px;
+        background: #F9F9F9;
+        padding: 24px;
+        margin-top: 24px;
+        .header-content{
+            .status{
+                font-size: 12px;
+                font-family: "Manrope-Bold";
+                display: flex;
+                height: 24px;
+                padding: 3px 10px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                &.new{
+                    background: #FFF1DD;
+                    color: #FFAA37;
+                }
+                &.approved{
+                    background: #F3FFF5;
+                    color: #00C222;
+                }
+                &.cancelled{
+                    background: #FFF3F2;
+                    color: #F74B59;
+                }
+            }
+            .order-code, .order-date{
+                font-size: 15px;
+                font-family: "Manrope-Regular";
+                color: rgba(17, 17, 17, 0.55);
+            }
+            .warranty-code{
+                font-size: 15px;
+                font-family: "Manrope-Bold";
+            }
+        }
+        .footer-content{
+            .contact-btn{
+                font-size: 16px;
+                svg{
+                    margin-bottom: 4px;
+                    margin-right: 2px;
+                }
+                &:hover{
+                    color: var(--primary-color);
+                    svg{
+                        path{
+                            fill: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+        .info-exten{
+            color: #8C91A2;
+            font-size: 15px;
+            font-family: "Manrope-Regular";
+            .text-right{
+                color: #111013;
+                h4{
+                    font-size: 15px;
+                    color: #232226;
+                    font-family: "Manrope-Bold";
+                }
+            }
+        }
+    }
+    .item-detail{
+        .avatar-area{
+            border-radius: 10px;
+            border: 1px solid #9C9C9C;
+            background: rgba(136, 136, 136, 0.04);
+            width: 70px;
+            height: 100%;
+            padding: 8px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .info-area{
+            width: calc(100% - 70px);
+            p{
+                font-size: 15px;
+                font-family: "Manrope-Regular";
+                color: rgba(17, 17, 17, 0.55);
+            }
+            .cate-product{
+                font-size: 12px;
+                font-family: "Manrope-Bold";
+            }
+            .product-name{
+                font-size: 16px;
+            }
+            .product-status{
+                display: flex;
+                padding: 3px 10px;
+                align-items: center;
+                gap: 4px;
+                align-self: stretch;
+                border-radius: 4px;
+                background: #C9161D;
+                color: #fff;
+                font-size: 12px;
+                font-family: "Manrope-SemiBold";
+                margin-bottom: 4px;
+            }
+        }
+    }
+    .view-cef{
+        cursor: pointer;
+        svg{
+            margin-bottom: 4px;
+        }
+        font-size: 12px;
+        font-family: "Manrope-Bold";
+        &:hover{
+            svg{
+                path{
+                    fill: #17161A;
+                }
+            }
+            span{
+                color: #17161A !important;
+            }
+        }
+    }
+    .total-price,
+    .show-more-products{
+        font-size: 15px;
+        font-family: "Manrope-Bold";
+        color: #2E2E2E;
+    }
+    .show-more-products{
+        cursor: pointer;
+        span{
+            margin-right: 4px;
+        }
+        &:hover{
+            color: var(--primary-color);
+            svg{
+                path{
+                    fill: var(--primary-color);
+                }
+            }
+        }
+    }
+    .row-info{
+        padding-top: 10px;
+        .label-info{
+            font-family: "Manrope-Bold";
+            font-size: 15px;
+            color: rgba(130, 128, 132, 1);
+        }
+        &>.label-info{
+            width: 50%;
+        }
+        &>.align-items-center{
+            width: 50%;
+        }
+        &.auto-width{
+             &>.label-info{
+                width: auto;
+            }
+            &>.align-items-center{
+                width: auto;
+            }
+        }
+    }
+}
